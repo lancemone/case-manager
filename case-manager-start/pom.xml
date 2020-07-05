@@ -11,8 +11,31 @@
     <artifactId>case-manager-start</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>case-manager-start</name>
-    <description>SpringBoot入口模块</description>
+    <description>SpringBoot启动模块</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${spring.boot.admin.version}</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.geekidea.springbootplus</groupId>-->
+<!--            <artifactId>framework</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.geekidea.springbootplus</groupId>-->
+<!--            <artifactId>example</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.geekidea.springbootplus</groupId>-->
+<!--            <artifactId>system</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.geekidea.springbootplus</groupId>-->
+<!--            <artifactId>scheduled</artifactId>-->
+<!--        </dependency>-->
+    </dependencies>
 
     <build>
         <plugins>
@@ -20,9 +43,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
-<!--                <configuration>-->
-<!--                    <fork>true</fork>-->
-<!--                </configuration>-->
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
