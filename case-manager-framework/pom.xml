@@ -55,11 +55,14 @@
             <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
         <!-- swagger end -->
+        <dependency>
+            <groupId>org.fusesource.jansi</groupId>
+            <artifactId>jansi</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.mone.server</groupId>
             <artifactId>case-manager-config</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
