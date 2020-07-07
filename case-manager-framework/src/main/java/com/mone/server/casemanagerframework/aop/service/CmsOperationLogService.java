@@ -4,6 +4,8 @@ import com.mone.server.casemanagerframework.aop.entity.CmsOperationLog;
 import com.mone.server.casemanagerframework.aop.log.param.CmsOperationLogPageParam;
 import com.mone.server.casemanagerframework.common.service.BaseService;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 /**
  * @Description
@@ -11,6 +13,8 @@ import com.mone.server.casemanagerframework.corn.pagination.Paging;
  * @auther motao
  * @create 2020-07-06 16:07
  */
+
+
 public interface CmsOperationLogService extends BaseService<CmsOperationLog> {
 
     /**

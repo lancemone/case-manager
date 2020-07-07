@@ -13,6 +13,7 @@ import com.mone.server.casemanagerframework.common.service.BaseServiceImpl;
 import com.mone.server.casemanagerframework.corn.pagination.PageInfo;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -25,6 +26,10 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 public class CmsOperationLogServiceImpl extends BaseServiceImpl<CmsOperationLogMapper, CmsOperationLog> implements CmsOperationLogService {
+
+    @Autowired
+    private CmsOperationLogMapper cmsOperationLogMapper;
+
     /**
      * 保存
      *
@@ -71,7 +76,7 @@ public class CmsOperationLogServiceImpl extends BaseServiceImpl<CmsOperationLogM
     public Paging<CmsOperationLog> getCmsOperationLogPageList(CmsOperationLogPageParam cmsOperationLogPageParam) throws Exception {
         Page<CmsOperationLog> page = new PageInfo<>(cmsOperationLogPageParam, OrderItem.desc(getLambdaColumn(CmsOperationLog::getCreateTime)));
         LambdaQueryWrapper<CmsOperationLog> wrapper = new LambdaQueryWrapper<>();
-        IPage<CmsOperationLog> iPage = baseMapper.selectPage(page, wrapper);
+        IPage<CmsOperationLog> iPage = cmsOperationLogMapper.selectPage(page, wrapper);
         return new Paging<CmsOperationLog>(iPage);
     }
 }

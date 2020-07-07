@@ -305,14 +305,14 @@ spring:
 
 
 #################################### Swagger start #################################
----
+
 case-manager:
   swagger:
     # 是否启用
     enable: true
     base:
       # 扫描的包，多个包使用逗号隔开
-      package: io.geekidea.springbootplus,com.example
+      package: com.mone.server.casemanagerstart,com.mone.server.casemanagerframework
     contact:
       name: MoTao
       email: motao@360.cn
@@ -320,16 +320,6 @@ case-manager:
     description: 用例管理系统API文档
     title: ${spring.application.name} API Documents
     version: ${project.version}
-    # 自定义参数配置，可配置N个
-    parameter-config:
-      - name: ${case-manager.jwt.token-name}
-        description: Token Request Header
-        # header, cookie, body, query
-        type: header
-        data-type: String
-        required: false
-        # 测试接口时，自动填充token的值
-        default-value:
 
 #################################### Swagger end ###################################
 

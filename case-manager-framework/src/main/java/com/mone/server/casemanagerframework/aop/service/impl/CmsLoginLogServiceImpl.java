@@ -11,6 +11,8 @@ import com.mone.server.casemanagerframework.aop.service.CmsLoginLogService;
 import com.mone.server.casemanagerframework.common.service.BaseServiceImpl;
 import com.mone.server.casemanagerframework.corn.pagination.PageInfo;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -19,8 +21,13 @@ import org.springframework.transaction.annotation.Transactional;
  * @auther motao
  * @create 2020-07-06 15:39
  */
+
+@Service
 public class CmsLoginLogServiceImpl extends BaseServiceImpl<CmsLoginLogMapper, CmsLoginLog> implements CmsLoginLogService {
 
+
+    @Autowired
+    private CmsLoginLogMapper loginLogMapper;
 
     /**
      * 保存
@@ -72,7 +79,7 @@ public class CmsLoginLogServiceImpl extends BaseServiceImpl<CmsLoginLogMapper, C
     public Paging<CmsLoginLog> getCmsLoginLogPageList(CmsLoginLogPageParam pageParam) throws Exception {
         Page<CmsLoginLog> page = new PageInfo<>(pageParam, OrderItem.desc(getLambdaColumn(CmsLoginLog::getCreateTime)));
         LambdaQueryWrapper<CmsLoginLog> wrapper = new LambdaQueryWrapper<>();
-        IPage<CmsLoginLog> iPage = baseMapper.selectPage(page, wrapper);
+        IPage<CmsLoginLog> iPage = loginLogMapper.selectPage(page, wrapper);
         return new Paging<CmsLoginLog>(iPage);
     }
 }

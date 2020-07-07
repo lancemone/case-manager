@@ -1,6 +1,5 @@
 package com.mone.server.casemanagerframework.aop.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.mone.server.casemanagerframework.aop.entity.CmsLoginLog;
 import com.mone.server.casemanagerframework.aop.log.param.CmsLoginLogPageParam;
 import com.mone.server.casemanagerframework.common.service.BaseService;
@@ -12,6 +11,7 @@ import com.mone.server.casemanagerframework.corn.pagination.Paging;
  * @auther motao
  * @create 2020-07-06 15:34
  */
+
 public interface CmsLoginLogService extends BaseService<CmsLoginLog> {
 
     /**

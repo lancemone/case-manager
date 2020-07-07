@@ -19,22 +19,15 @@
             <artifactId>spring-boot-admin-starter-client</artifactId>
             <version>${spring.boot.admin.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>io.geekidea.springbootplus</groupId>-->
-<!--            <artifactId>framework</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.geekidea.springbootplus</groupId>-->
-<!--            <artifactId>example</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.geekidea.springbootplus</groupId>-->
-<!--            <artifactId>system</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.geekidea.springbootplus</groupId>-->
-<!--            <artifactId>scheduled</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mone.server</groupId>
+            <artifactId>case-manager-framework</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

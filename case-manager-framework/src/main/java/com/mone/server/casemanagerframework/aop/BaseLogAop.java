@@ -25,10 +25,8 @@ import com.mone.server.casemanagerframework.util.UUIDUtil;
 import com.mone.server.config.constant.CommonConstant;
 import com.mone.server.config.properties.AopProperties;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.MapUtils;
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -77,6 +75,7 @@ public abstract class BaseLogAop {
 
     @Autowired
     protected CmsLoginLogService loginLogService;
+
 
     // 本地线程变量，保存请求参数信息到当前线程
     protected static ThreadLocal<String> threadLocal = new ThreadLocal<>();
@@ -141,13 +140,13 @@ public abstract class BaseLogAop {
     protected AopProperties.LoginLogConfig loginLogConfig;
 
     @Autowired
-    public void setAopProperties(AopProperties springBootPlusAopProperties) {
-        logAopConfig = springBootPlusAopProperties.getLog();
+    public void setAopProperties(AopProperties aopProperties) {
+        logAopConfig = aopProperties.getLog();
         logPrintType = logAopConfig.getLogPrintType();
         enableRequestId = logAopConfig.isEnableRequestId();
         requestIdType = logAopConfig.getRequestIdType();
-        operationLogConfig = springBootPlusAopProperties.getOperationLog();
-        loginLogConfig = springBootPlusAopProperties.getLoginLog();
+        operationLogConfig = aopProperties.getOperationLog();
+        loginLogConfig = aopProperties.getLoginLog();
         log.debug("logAopConfig = " + logAopConfig);
         log.debug("logPrintType = " + logPrintType);
         log.debug("enableRequestId = " + enableRequestId);

@@ -1,7 +1,8 @@
 package com.mone.server.casemanagerframework.aop.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.mone.server.casemanagerframework.aop.entity.IpAddressEntity;
+import com.mone.server.casemanagerframework.common.service.BaseService;
+import org.springframework.stereotype.Service;
 
 /**
  * @Description
@@ -9,7 +10,9 @@ import com.mone.server.casemanagerframework.aop.entity.IpAddressEntity;
  * @auther motao
  * @create 2020-07-06 14:52
  */
-public interface IpAddressService extends IService<IpAddressEntity> {
+
+@Service
+public interface IpAddressService extends BaseService<IpAddressEntity> {
     /**
      * 通过ip地址获取IP对象
      *
