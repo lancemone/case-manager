@@ -18,7 +18,7 @@ server:
 ################################ spring config start ###############################
 spring:
   application:
-    name: CaseManager
+    name: Case Manager
   security:
     user:
       name: user

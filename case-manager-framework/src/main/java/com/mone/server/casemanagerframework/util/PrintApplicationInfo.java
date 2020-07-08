@@ -1,9 +1,12 @@
 package com.mone.server.casemanagerframework.util;
 
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.fusesource.jansi.Ansi;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
+
+import java.net.InetAddress;
 
 /**
  * @Description
@@ -54,7 +57,9 @@ public class PrintApplicationInfo {
     /**
      * 启动成功之后，打印项目信息
      */
+    @SneakyThrows
     public static void print(ConfigurableApplicationContext context) {
+        String serverIp = null;
         ConfigurableEnvironment environment = context.getEnvironment();
         // 项目名称
         String projectFinalName = environment.getProperty("info.project-finalName");
@@ -65,7 +70,11 @@ public class PrintApplicationInfo {
         // 项目路径
         String contextPath = environment.getProperty("server.servlet.context-path");
         // 项目IP或域名地址
-        String serverIp = environment.getProperty("case-manager.server-ip");
+        if ("dev".equals(profileActive)) {
+            serverIp = environment.getProperty("case-manager.server-ip");
+        } else {
+            serverIp = InetAddress.getLocalHost().getHostAddress();
+        }
         // 项目端口
         String port = environment.getProperty("server.port");
         // Spring Boot Admin Server地址，请先在admin模块中启动 SpringBootPlusAdminApplication
