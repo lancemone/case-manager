@@ -1,13 +1,9 @@
 package com.mone.server.casemanagerframework.common.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-import java.util.Date;
+import java.io.Serializable;
 
 /**
  * @Description
@@ -16,14 +12,7 @@ import java.util.Date;
  * @create 2020-06-23 11:18
  */
 
-@Getter
-@Setter
-public abstract class BaseEntity<T extends Model<?>> extends BaseAddEntity<T>{
-
-    /**
-     * 更新时间
-     */
-    @ApiModelProperty(value = "更新时间")
-    @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
-    private Date updateTime;
+@Data
+public abstract class BaseEntity<T extends Model<?>> extends Model<T> implements Serializable {
+    private static final long serialVersionUID = -7176390653391227433L;
 }
