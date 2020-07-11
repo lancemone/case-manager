@@ -2,7 +2,6 @@ package com.mone.server.casemanagerframework.aop.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.mone.server.casemanagerframework.aop.entity.CmsOperationLog;
-import com.mone.server.casemanagerframework.common.service.BaseService;
 import org.springframework.stereotype.Repository;
 
 /**

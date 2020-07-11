@@ -1,6 +1,8 @@
 package com.mone.server.casemanagerframework.aop.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.mone.server.casemanagerframework.common.entity.BaseEntity;
 import com.mone.server.casemanagerframework.corn.validator.groups.Update;
@@ -11,6 +13,8 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+import java.util.Date;
 
 /**
  * @Description 系统操作日志
@@ -125,4 +129,19 @@ public class CmsOperationLog extends BaseEntity<CmsOperationLog> {
 
     @ApiModelProperty("备注")
     private String remark;
+
+    /**
+     * 创建日期 - 现在时表示主动创建
+     */
+    @ApiModelProperty(value = "创建日期")
+    @TableField(value = "create_time", fill = FieldFill.INSERT)
+    @Past(message = "创建时间必须是过去时间")
+    private Date createTime;
+
+    /**
+     * 更新时间
+     */
+    @ApiModelProperty(value = "更新时间")
+    @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
+    private Date updateTime;
 }

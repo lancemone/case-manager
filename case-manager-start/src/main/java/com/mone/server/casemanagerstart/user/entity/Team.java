@@ -1,29 +1,26 @@
-package com.mone.server.casemanagerstart.user.entity
+package com.mone.server.casemanagerstart.user.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName
-import com.baomidou.mybatisplus.annotation.IdType
-import com.baomidou.mybatisplus.annotation.Version
-import com.baomidou.mybatisplus.annotation.TableId
-import com.mone.server.casemanagerframework.common.entity.BaseEntity
-
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.mone.server.casemanagerframework.common.entity.BaseEntity;
+import com.mone.server.casemanagerframework.corn.validator.groups.Update;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.NotBlank;
-import com.mone.server.casemanagerframework.corn.validator.groups.Update;
+import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 /**
  * 系统组织表
- * Team实体类
- * @Description :
- * @Classname : ${className}
+ *
  * @author : MoTao
- * @create 2020-07-10
+ * @Description : Team实体类
+ * @create 2020-07-11
  */
 
 @Data
@@ -31,24 +28,30 @@ import com.mone.server.casemanagerframework.corn.validator.groups.Update;
 @EqualsAndHashCode(callSuper = true)
 @TableName("cmu_team")
 @ApiModel(value = "Team对象")
-public class Team extends BaseEntity {
-private static final long serialVersionUID = 1L;
+public class Team extends BaseEntity<Team> {
+    private static final long serialVersionUID = 1L;
 
-        @NotNull(message = "id不能为空", groups = {Update.class})
+    @NotNull(message = "id不能为空", groups = {Update.class})
     @ApiModelProperty("组织id")
-        @TableId(value = "id", type = IdType.AUTO)
-                private Integer id;
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
-        @NotBlank(message = "组织名称不能为空")
+    @NotBlank(message = "组织名称不能为空")
     @ApiModelProperty("组织名称")
-            private String name;
+    private String name;
 
-        @NotBlank(message = "组织简介不能为空")
+    @NotBlank(message = "组织简介不能为空")
     @ApiModelProperty("组织简介")
-            private String remarks;
+    private String remarks;
 
-        @NotBlank(message = "地址不能为空")
+    @NotBlank(message = "地址不能为空")
     @ApiModelProperty("地址")
-            private String address;
+    private String address;
+
+    @ApiModelProperty("创建时间")
+    private Date createTime;
+
+    @ApiModelProperty("更新时间")
+    private Date updateTime;
 
 }

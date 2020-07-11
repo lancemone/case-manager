@@ -1,17 +1,18 @@
 package com.mone.server.casemanagerstart.user.service;
 
-import com.mone.server.casemanagerstart.user.entity.Team;
-import com.mone.server.casemanagerstart.user.param.TeamPageParam;
 import com.mone.server.casemanagerframework.common.service.BaseService;
-import com.mone.server.casemanagerstart.user.vo.TeamQueryVo;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
+import com.mone.server.casemanagerstart.user.param.TeamPageParam;
+import com.mone.server.casemanagerstart.user.vo.TeamQueryVo;
+
+import java.io.Serializable;
 
 /**
  * 系统组织表 服务类
  * @Description :
  * @Classname : ${className}
  * @author : MoTao
- * @create 2020-07-10
+ * @create 2020-07-11
  */
 public interface TeamService extends BaseService<Team> {
 

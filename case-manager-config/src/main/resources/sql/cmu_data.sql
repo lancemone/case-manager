@@ -10,7 +10,7 @@
 #                                                 (3, 'visitor', '访客', '仅可查看');
 #
 # /*Data for the table `cmu_user_role` */
-# insert into cmu_user_role(user_id, role_id, role_name) VALUES (1, 1, '管理员'), (2, 2, '测试人员');
+# insert into cmu_user_role(user_id, role_id) VALUES (1, 1), (2, 2);
 #
 # /*Data for the table `cmu_team` */
 # insert into cmu_team (name, remarks, address) VALUES

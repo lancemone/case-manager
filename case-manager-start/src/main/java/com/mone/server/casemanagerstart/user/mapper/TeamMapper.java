@@ -1,15 +1,13 @@
 package com.mone.server.casemanagerstart.user.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.mone.server.casemanagerstart.user.entity.Team;
-import com.mone.server.casemanagerstart.user.param.TeamPageParam;
-import com.mone.server.casemanagerstart.user.vo.TeamQueryVo;
-
-import org.springframework.stereotype.Repository;
-
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.mone.server.casemanagerstart.user.param.TeamPageParam;
+import com.mone.server.casemanagerstart.user.vo.TeamQueryVo;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
 import java.io.Serializable;
 
 /**
@@ -17,7 +15,7 @@ import java.io.Serializable;
  * @Description :
  * @Classname : ${className}
  * @author : MoTao
- * @create 2020-07-10
+ * @create 2020-07-11
  */
 @Repository
 public interface TeamMapper extends BaseMapper<Team> {

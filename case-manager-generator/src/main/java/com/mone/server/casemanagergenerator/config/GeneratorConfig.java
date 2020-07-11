@@ -27,31 +27,31 @@ public class GeneratorConfig {
     /**
      * 是否生成控制器
      */
-    private boolean generatorController = true;
+    private boolean generatorController = false;
     /**
      * 是否生成service接口
      */
-    private boolean generatorService = true;
+    private boolean generatorService = false;
     /**
      * 是否生成service实现类
      */
-    private boolean generatorServiceImpl = true;
+    private boolean generatorServiceImpl = false;
     /**
      * 是否生成Mapper
      */
-    private boolean generatorMapper = true;
+    private boolean generatorMapper = false;
     /**
      * 是否生成Mapper XML
      */
-    private boolean generatorMapperXml = true;
+    private boolean generatorMapperXml = false;
     /**
      * 是否生成查询参数
      */
-    private boolean generatorPageParam = true;
+    private boolean generatorPageParam = false;
     /**
      * 是否生成查询VO
      */
-    private boolean generatorQueryVo = true;
+    private boolean generatorQueryVo = false;
     /**
      * 是否生成Shiro RequiresPermissions 注解
      */

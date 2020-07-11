@@ -34,10 +34,11 @@ public class CaseManagerGenerator {
                 .setParentPackage("com.mone.server.casemanagerstart")
                 .setModuleName("user")
                 .setAuthor("MoTao")
-                .setFileOverride(false);
+                .setFileOverride(true);
 
         // 设置表信息
         generatorProperties.addTable("cmu_user","id");
+        generatorProperties.addTable("cmu_role","id");
         generatorProperties.addTable("cmu_user_role", "id");
         generatorProperties.addTable("cmu_team", "id");
         generatorProperties.addTable("cmu_user_team", "id");

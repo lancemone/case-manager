@@ -1,7 +1,7 @@
-package ${package.Entity}
+package ${package.Entity};
 
 #foreach($pkg in ${table.importPackages})
-import ${pkg}
+import ${pkg};
 #end
 
 #if(${swagger2})
@@ -23,9 +23,8 @@ import ${cfg.validatorUpdatePackage};
 
 /**
  * $!{table.comment}
- * ${entity}实体类
- * @Description :
- * @Classname : ${className}
+ *
+ * @Description : ${entity}实体类
  * @author : ${author}
  * @create ${date}
  */
@@ -46,7 +45,7 @@ import ${cfg.validatorUpdatePackage};
 @ApiModel(value = "${entity}对象")
 #end
 #if(${superEntityClass})
-public class ${entity} extends ${superEntityClass}#if(${activeRecord})<${entity}>#end {
+public class ${entity} extends ${superEntityClass}<${entity}> {
 #elseif(${activeRecord})
 public class ${entity} extends Model<${entity}> {
 #else

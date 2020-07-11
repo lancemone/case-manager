@@ -1,10 +1,10 @@
 package com.mone.server.casemanagerstart.user.service;
 
+import com.mone.server.casemanagerframework.common.service.BaseService;
+import com.mone.server.casemanagerframework.corn.pagination.Paging;
 import com.mone.server.casemanagerstart.user.entity.User;
 import com.mone.server.casemanagerstart.user.param.UserPageParam;
-import com.mone.server.casemanagerframework.common.service.BaseService;
 import com.mone.server.casemanagerstart.user.vo.UserQueryVo;
-import com.mone.server.casemanagerframework.corn.pagination.Paging;
 
 import java.io.Serializable;
 
@@ -13,7 +13,7 @@ import java.io.Serializable;
  * @Description :
  * @Classname : ${className}
  * @author : MoTao
- * @create 2020-07-10
+ * @create 2020-07-11
  */
 public interface UserService extends BaseService<User> {
 
@@ -56,7 +56,7 @@ public interface UserService extends BaseService<User> {
     /**
     * 获取分页对象
     *
-    * @param userQueryParam
+    * @param
     * @return
     * @throws Exception
     */

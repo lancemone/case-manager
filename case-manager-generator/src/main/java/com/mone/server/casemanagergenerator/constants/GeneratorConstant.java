@@ -11,10 +11,6 @@ import java.io.File;
 public interface GeneratorConstant {
 
     /**
-     * 用户目录
-     */
-    String USER_DIR = "/Users/taomo/IdeaProjects/case-manager";
-    /**
      * java目录 src/main/java
      */
     String JAVA_DIR = File.separator + "src" + File.separator + "main" + File.separator + "java";

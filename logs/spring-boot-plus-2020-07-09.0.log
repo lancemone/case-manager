@@ -1,0 +1,355 @@
+2020-07-08 10:27:14.023  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      55 : Starting CaseManagerStartApplication on motao-d1 with PID 14576 (E:\JavaSpace\case-manager\case-manager-start\target\classes started by motao in E:\JavaSpace\case-manager)
+2020-07-08 10:27:14.027  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      655 : The following profiles are active: dev
+2020-07-08 10:27:14.097  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-08 10:27:14.097  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-08 10:27:16.972  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-08 10:27:16.975  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-08 10:27:17.024  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-07-08 10:27:17.269  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsLoginLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsLoginLogMapper' mapperInterface. Bean already defined with the same name!
+2020-07-08 10:27:17.269  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsOperationLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsOperationLogMapper' mapperInterface. Bean already defined with the same name!
+2020-07-08 10:27:17.270  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'ipAddressMapper' and 'com.mone.server.casemanagerframework.aop.mapper.IpAddressMapper' mapperInterface. Bean already defined with the same name!
+2020-07-08 10:27:17.766  INFO [restartedMain] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$c63dc648] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-08 10:27:18.384  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  108 : Tomcat initialized with port(s): 8888 (http)
+2020-07-08 10:27:18.394  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2020-07-08 10:27:18.395  INFO [restartedMain] [] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2020-07-08 10:27:18.395  INFO [restartedMain] [] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-08 10:27:18.542  INFO [restartedMain] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring embedded WebApplicationContext
+2020-07-08 10:27:18.542  INFO [restartedMain] [] w.s.c.ServletWebServerApplicationContext 285 : Root WebApplicationContext: initialization completed in 4444 ms
+2020-07-08 10:27:18.782  INFO [restartedMain] [] o.s.b.a.e.web.ServletEndpointRegistrar   75 : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-07-08 10:27:19.003  INFO [restartedMain] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
+2020-07-08 10:27:19.754  INFO [restartedMain] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
+2020-07-08 10:27:21.554  INFO [restartedMain] [] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-07-08 10:27:21.687  INFO [restartedMain] [] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-08 10:27:21.695  INFO [restartedMain] [] c.m.s.c.config.Swagger2Config            115 : swagger scan basePackages:[com.mone.server.casemanagerstart, com.mone.server.casemanagerframework]
+2020-07-08 10:27:22.028  INFO [restartedMain] [] o.s.s.concurrent.ThreadPoolTaskExecutor  181 : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-08 10:27:22.116  INFO [restartedMain] [] o.s.b.d.a.OptionalLiveReloadServer       58 : LiveReload server is running on port 35729
+2020-07-08 10:27:22.277  INFO [restartedMain] [] o.s.s.c.ThreadPoolTaskScheduler          181 : Initializing ExecutorService
+2020-07-08 10:27:22.670  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2020-07-08 10:27:22.703  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  220 : Tomcat started on port(s): 8888 (http) with context path '/api'
+2020-07-08 10:27:22.704  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 160 : Context refreshed
+2020-07-08 10:27:22.738  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 163 : Found 1 custom documentation plugin(s)
+2020-07-08 10:27:22.780  INFO [restartedMain] [] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2020-07-08 10:27:22.972  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      61 : Started CaseManagerStartApplication in 10.142 seconds (JVM running for 11.839)
+2020-07-08 10:27:23.114  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        74 : projectFinalName : @boot.artifact.name@
+2020-07-08 10:27:23.114  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        75 : projectVersion : 0.0.1-SNAPSHOT
+2020-07-08 10:27:23.115  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        76 : profileActive : dev
+2020-07-08 10:27:23.115  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        77 : contextPath : /api
+2020-07-08 10:27:23.115  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        78 : serverIp : 127.0.0.1
+2020-07-08 10:27:23.115  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        79 : port : 8888
+2020-07-08 10:27:23.115  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        93 : Admin:   http://127.0.0.1:8000
+2020-07-08 10:27:23.115  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        94 : Home:    http://127.0.0.1:8888/api
+2020-07-08 10:27:23.115  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        95 : Swagger: http://127.0.0.1:8888/api/swagger-ui.html
+2020-07-08 10:27:23.115  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        96 : project start success...........
+2020-07-08 10:27:23.131  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        98 : 
+[2J[34m ____    __                    __        ____                                                   
+/\  _`\ /\ \__                /\ \__    /\  _`\                                                 
+\ \,\L\_\ \ ,_\    __     _ __\ \ ,_\   \ \,\L\_\  __  __    ___    ___     __    ____    ____  
+ \/_\__ \\ \ \/  /'__`\  /\`'__\ \ \/    \/_\__ \ /\ \/\ \  /'___\ /'___\ /'__`\ /',__\  /',__\ 
+   /\ \L\ \ \ \_/\ \L\.\_\ \ \/ \ \ \_     /\ \L\ \ \ \_\ \/\ \__//\ \__//\  __//\__, `\/\__, `\
+   \ `\____\ \__\ \__/.\_\\ \_\  \ \__\    \ `\____\ \____/\ \____\ \____\ \____\/\____/\/\____/
+    \/_____/\/__/\/__/\/_/ \/_/   \/__/     \/_____/\/___/  \/____/\/____/\/____/\/___/  \/___/ 
+                                                                                                
+                                                                                                [m
+2020-07-08 10:27:23.132  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        50 : 
+[2J[33m===========================================================================================
+                                                                                  
+                               !!!开始启动项目!!!                                      
+=======>>>启动环境: dev===========================================================================================
+[m
+2020-07-08 10:27:23.543  INFO [RMI TCP Connection(2)-10.18.27.7] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-08 10:27:23.543  INFO [RMI TCP Connection(2)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2020-07-08 10:27:23.556  INFO [RMI TCP Connection(2)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 13 ms
+2020-07-08 10:27:24.276  WARN [boundedElastic-1] [] o.s.b.a.r.RedisReactiveHealthIndicator   89 : Redis health check failed
+
+org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 211.149.213.243:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1225)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1206)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:980)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:441)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:95)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:85)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:225)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 211.149.213.243:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:234)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:207)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:209)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:199)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 15 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: DENIED Redis is running in protected mode because protected mode is enabled, no bind address was specified, no authentication password is requested to clients. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a bind address or an authentication password. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+	at io.lettuce.core.protocol.CommandHandler.onProtectedMode(CommandHandler.java:759)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:607)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:565)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+
+2020-07-08 10:27:25.238  WARN [registrationTask1] [] d.c.b.a.c.r.ApplicationRegistrator       93 : Failed to register application as Application(name=case manager, managementUrl=http://127.0.0.1:8888/api/actuator, healthUrl=http://127.0.0.1:8888/api/actuator/health, serviceUrl=http://127.0.0.1:8888/api) at spring-boot-admin ([http://127.0.0.1:8000/instances]): I/O error on POST request for "http://127.0.0.1:8000/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level
+2020-07-08 10:39:26.937  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      55 : Starting CaseManagerStartApplication on motao-d1 with PID 13740 (E:\JavaSpace\case-manager\case-manager-start\target\classes started by motao in E:\JavaSpace\case-manager)
+2020-07-08 10:39:26.939  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      655 : The following profiles are active: dev
+2020-07-08 10:39:26.981  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-08 10:39:26.981  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-08 10:39:28.284  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-08 10:39:28.286  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-08 10:39:28.316  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-07-08 10:39:28.456  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsLoginLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsLoginLogMapper' mapperInterface. Bean already defined with the same name!
+2020-07-08 10:39:28.456  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsOperationLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsOperationLogMapper' mapperInterface. Bean already defined with the same name!
+2020-07-08 10:39:28.457  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'ipAddressMapper' and 'com.mone.server.casemanagerframework.aop.mapper.IpAddressMapper' mapperInterface. Bean already defined with the same name!
+2020-07-08 10:39:28.774  INFO [restartedMain] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$637dc981] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-08 10:39:29.269  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  108 : Tomcat initialized with port(s): 8888 (http)
+2020-07-08 10:39:29.278  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2020-07-08 10:39:29.278  INFO [restartedMain] [] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2020-07-08 10:39:29.279  INFO [restartedMain] [] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-08 10:39:29.422  INFO [restartedMain] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring embedded WebApplicationContext
+2020-07-08 10:39:29.422  INFO [restartedMain] [] w.s.c.ServletWebServerApplicationContext 285 : Root WebApplicationContext: initialization completed in 2441 ms
+2020-07-08 10:39:29.594  INFO [restartedMain] [] o.s.b.a.e.web.ServletEndpointRegistrar   75 : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-07-08 10:39:29.726  INFO [restartedMain] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
+2020-07-08 10:39:30.481  INFO [restartedMain] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
+2020-07-08 10:39:31.660  WARN [restartedMain] [] ConfigServletWebServerApplicationContext 559 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/E:/JavaSpace/Repositories/Maven/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/E:/JavaSpace/Repositories/Maven/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webEndpointServletHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/servlet/WebMvcEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping]: Factory method 'webEndpointServletHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cachesEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/cache/CachesEndpointAutoConfiguration.class]: Unsatisfied dependency expressed through method 'cachesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheManager' defined in class path resource [com/mone/server/casemanagerstart/config/redis/RedisCacheConfig.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Host must not be empty
+2020-07-08 10:39:31.680  INFO [restartedMain] [] com.alibaba.druid.pool.DruidDataSource   2029 : {dataSource-1} closing ...
+2020-07-08 10:39:31.684  INFO [restartedMain] [] com.alibaba.druid.pool.DruidDataSource   2101 : {dataSource-1} closed
+2020-07-08 10:39:31.688  INFO [restartedMain] [] o.apache.catalina.core.StandardService   173 : Stopping service [Tomcat]
+2020-07-08 10:39:31.700  INFO [restartedMain] [] ConditionEvaluationReportLoggingListener 136 : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-08 10:39:31.731 ERROR [restartedMain] [] o.s.boot.SpringApplication               837 : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/E:/JavaSpace/Repositories/Maven/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/E:/JavaSpace/Repositories/Maven/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webEndpointServletHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/servlet/WebMvcEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping]: Factory method 'webEndpointServletHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cachesEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/cache/CachesEndpointAutoConfiguration.class]: Unsatisfied dependency expressed through method 'cachesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheManager' defined in class path resource [com/mone/server/casemanagerstart/config/redis/RedisCacheConfig.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Host must not be empty
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.mone.server.casemanagerstart.CaseManagerStartApplication.main(CaseManagerStartApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/E:/JavaSpace/Repositories/Maven/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webEndpointServletHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/servlet/WebMvcEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping]: Factory method 'webEndpointServletHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cachesEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/cache/CachesEndpointAutoConfiguration.class]: Unsatisfied dependency expressed through method 'cachesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheManager' defined in class path resource [com/mone/server/casemanagerstart/config/redis/RedisCacheConfig.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Host must not be empty
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1522)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1262)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webEndpointServletHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/servlet/WebMvcEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping]: Factory method 'webEndpointServletHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cachesEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/cache/CachesEndpointAutoConfiguration.class]: Unsatisfied dependency expressed through method 'cachesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheManager' defined in class path resource [com/mone/server/casemanagerstart/config/redis/RedisCacheConfig.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Host must not be empty
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1522)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1262)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 42 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping]: Factory method 'webEndpointServletHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cachesEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/cache/CachesEndpointAutoConfiguration.class]: Unsatisfied dependency expressed through method 'cachesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheManager' defined in class path resource [com/mone/server/casemanagerstart/config/redis/RedisCacheConfig.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Host must not be empty
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 59 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cachesEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/cache/CachesEndpointAutoConfiguration.class]: Unsatisfied dependency expressed through method 'cachesEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheManager' defined in class path resource [com/mone/server/casemanagerstart/config/redis/RedisCacheConfig.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Host must not be empty
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.lambda$createEndpointBean$1(EndpointDiscoverer.java:145)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer$EndpointBean.getBean(EndpointDiscoverer.java:469)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getFilterEndpoint(EndpointDiscoverer.java:329)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isFilterMatch(EndpointDiscoverer.java:307)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isExtensionExposed(EndpointDiscoverer.java:239)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.addExtensionBean(EndpointDiscoverer.java:170)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.addExtensionBeans(EndpointDiscoverer.java:159)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:124)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:117)
+	at org.springframework.boot.actuate.autoconfigure.endpoint.web.servlet.WebMvcEndpointManagementContextConfiguration.webEndpointServletHandlerMapping(WebMvcEndpointManagementContextConfiguration.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 60 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheManager' defined in class path resource [com/mone/server/casemanagerstart/config/redis/RedisCacheConfig.class]: Unsatisfied dependency expressed through method 'cacheManager' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Host must not be empty
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1522)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1405)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1262)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 85 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisConnectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/LettuceConnectionConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Host must not be empty
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 102 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Host must not be empty
+	at io.lettuce.core.internal.LettuceAssert.notEmpty(LettuceAssert.java:46)
+	at io.lettuce.core.RedisURI$Builder.redis(RedisURI.java:1044)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.createRedisURIAndApplySettings(LettuceConnectionFactory.java:1132)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.createClient(LettuceConnectionFactory.java:1075)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.afterPropertiesSet(LettuceConnectionFactory.java:279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 113 common frames omitted
+
+2020-07-08 10:39:46.885  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      55 : Starting CaseManagerStartApplication on motao-d1 with PID 11604 (E:\JavaSpace\case-manager\case-manager-start\target\classes started by motao in E:\JavaSpace\case-manager)
+2020-07-08 10:39:46.888  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      655 : The following profiles are active: dev
+2020-07-08 10:39:46.928  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-08 10:39:46.928  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-08 10:39:48.206  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-08 10:39:48.209  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-08 10:39:48.239  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-07-08 10:39:48.374  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsLoginLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsLoginLogMapper' mapperInterface. Bean already defined with the same name!
+2020-07-08 10:39:48.374  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsOperationLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsOperationLogMapper' mapperInterface. Bean already defined with the same name!
+2020-07-08 10:39:48.374  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'ipAddressMapper' and 'com.mone.server.casemanagerframework.aop.mapper.IpAddressMapper' mapperInterface. Bean already defined with the same name!
+2020-07-08 10:39:48.684  INFO [restartedMain] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$bc585108] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-08 10:39:49.130  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  108 : Tomcat initialized with port(s): 8888 (http)
+2020-07-08 10:39:49.137  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2020-07-08 10:39:49.138  INFO [restartedMain] [] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2020-07-08 10:39:49.138  INFO [restartedMain] [] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-08 10:39:49.274  INFO [restartedMain] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring embedded WebApplicationContext
+2020-07-08 10:39:49.274  INFO [restartedMain] [] w.s.c.ServletWebServerApplicationContext 285 : Root WebApplicationContext: initialization completed in 2346 ms
+2020-07-08 10:39:49.441  INFO [restartedMain] [] o.s.b.a.e.web.ServletEndpointRegistrar   75 : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-07-08 10:39:49.569  INFO [restartedMain] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
+2020-07-08 10:39:50.197  INFO [restartedMain] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
+2020-07-08 10:39:51.511  INFO [restartedMain] [] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-07-08 10:39:51.589  INFO [restartedMain] [] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-08 10:39:51.596  INFO [restartedMain] [] c.m.s.c.config.Swagger2Config            115 : swagger scan basePackages:[com.mone.server.casemanagerstart, com.mone.server.casemanagerframework]
+2020-07-08 10:39:51.838  INFO [restartedMain] [] o.s.s.concurrent.ThreadPoolTaskExecutor  181 : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-08 10:39:51.892  INFO [restartedMain] [] o.s.b.d.a.OptionalLiveReloadServer       58 : LiveReload server is running on port 35729
+2020-07-08 10:39:52.024  INFO [restartedMain] [] o.s.s.c.ThreadPoolTaskScheduler          181 : Initializing ExecutorService
+2020-07-08 10:39:52.362  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2020-07-08 10:39:52.387  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  220 : Tomcat started on port(s): 8888 (http) with context path '/api'
+2020-07-08 10:39:52.388  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 160 : Context refreshed
+2020-07-08 10:39:52.404  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 163 : Found 1 custom documentation plugin(s)
+2020-07-08 10:39:52.440  INFO [restartedMain] [] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2020-07-08 10:39:52.598  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      61 : Started CaseManagerStartApplication in 6.389 seconds (JVM running for 7.511)
+2020-07-08 10:39:52.606  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        74 : projectFinalName : @boot.artifact.name@
+2020-07-08 10:39:52.606  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        75 : projectVersion : 0.0.1-SNAPSHOT
+2020-07-08 10:39:52.607  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        76 : profileActive : dev
+2020-07-08 10:39:52.607  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        77 : contextPath : /api
+2020-07-08 10:39:52.607  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        78 : serverIp : 127.0.0.1
+2020-07-08 10:39:52.607  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        79 : port : 8888
+2020-07-08 10:39:52.607  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        93 : Admin:   http://127.0.0.1:8000
+2020-07-08 10:39:52.607  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        94 : Home:    http://127.0.0.1:8888/api
+2020-07-08 10:39:52.607  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        95 : Swagger: http://127.0.0.1:8888/api/swagger-ui.html
+2020-07-08 10:39:52.608  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        96 : project start success...........
+2020-07-08 10:39:52.756  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        98 : 
+[2J[34m ____    __                    __        ____                                                   
+/\  _`\ /\ \__                /\ \__    /\  _`\                                                 
+\ \,\L\_\ \ ,_\    __     _ __\ \ ,_\   \ \,\L\_\  __  __    ___    ___     __    ____    ____  
+ \/_\__ \\ \ \/  /'__`\  /\`'__\ \ \/    \/_\__ \ /\ \/\ \  /'___\ /'___\ /'__`\ /',__\  /',__\ 
+   /\ \L\ \ \ \_/\ \L\.\_\ \ \/ \ \ \_     /\ \L\ \ \ \_\ \/\ \__//\ \__//\  __//\__, `\/\__, `\
+   \ `\____\ \__\ \__/.\_\\ \_\  \ \__\    \ `\____\ \____/\ \____\ \____\ \____\/\____/\/\____/
+    \/_____/\/__/\/__/\/_/ \/_/   \/__/     \/_____/\/___/  \/____/\/____/\/____/\/___/  \/___/ 
+                                                                                                
+                                                                                                [m
+2020-07-08 10:39:52.756  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        50 : 
+[2J[33m===========================================================================================
+                                                                                  
+                               !!!开始启动项目!!!                                      
+=======>>>启动环境: dev===========================================================================================
+[m
+2020-07-08 10:39:53.217  INFO [RMI TCP Connection(2)-10.18.27.7] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-08 10:39:53.217  INFO [RMI TCP Connection(2)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2020-07-08 10:39:53.229  INFO [RMI TCP Connection(2)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 11 ms
+2020-07-08 10:39:54.804  WARN [registrationTask1] [] d.c.b.a.c.r.ApplicationRegistrator       93 : Failed to register application as Application(name=case manager, managementUrl=http://127.0.0.1:8888/api/actuator, healthUrl=http://127.0.0.1:8888/api/actuator/health, serviceUrl=http://127.0.0.1:8888/api) at spring-boot-admin ([http://127.0.0.1:8000/instances]): I/O error on POST request for "http://127.0.0.1:8000/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level

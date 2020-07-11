@@ -48,13 +48,12 @@ create table cmu_user_role
     id int(10) auto_increment comment '主键ID',
     user_id int(11) not null comment '用户ID',
     role_id int(5) not null comment '角色ID',
-    role_name varchar(20) not null comment '角色名称',
     create_time datetime(0) default now() comment '创建时间',
     update_time datetime(0) default now() comment '更新时间',
 
     primary key (id),
     foreign key (user_id) references cmu_user(id) on update cascade on delete cascade,  # 同步更新和删除
-    foreign key (role_name) references cmu_role(name) on update cascade on delete cascade
+    foreign key (role_id) references cmu_role(id) on update cascade on delete cascade
 ) engine InnoDB default charset utf8 comment '系统用户-角色表' ;
 
 drop table if exists `cmu_user_team`;

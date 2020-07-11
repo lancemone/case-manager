@@ -11,23 +11,24 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
- * 系统用户-角色表
+ * 系统角色表
  *
  * @author : MoTao
- * @Description : UserRole实体类
+ * @Description : Role实体类
  * @create 2020-07-11
  */
 
 @Data
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
-@TableName("cmu_user_role")
-@ApiModel(value = "UserRole对象")
-public class UserRole extends BaseEntity<UserRole> {
+@TableName("cmu_role")
+@ApiModel(value = "Role对象")
+public class Role extends BaseEntity<Role> {
     private static final long serialVersionUID = 1L;
 
     @NotNull(message = "id不能为空", groups = {Update.class})
@@ -35,13 +36,16 @@ public class UserRole extends BaseEntity<UserRole> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @NotNull(message = "用户ID不能为空")
-    @ApiModelProperty("用户ID")
-    private Integer userId;
+    @NotBlank(message = "角色编码不能为空")
+    @ApiModelProperty("角色编码")
+    private String code;
 
-    @NotNull(message = "角色ID不能为空")
-    @ApiModelProperty("角色ID")
-    private Integer roleId;
+    @NotBlank(message = "角色名称不能为空")
+    @ApiModelProperty("角色名称")
+    private String name;
+
+    @ApiModelProperty("角色描述")
+    private String remarks;
 
     @ApiModelProperty("创建时间")
     private Date createTime;

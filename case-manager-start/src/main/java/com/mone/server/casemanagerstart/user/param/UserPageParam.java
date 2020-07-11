@@ -1,10 +1,10 @@
 package com.mone.server.casemanagerstart.user.param;
 
+import com.mone.server.casemanagerframework.corn.pagination.BasePageOrderParam;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
-import com.mone.server.casemanagerframework.corn.pagination.BasePageOrderParam;
 
 /**
  * <pre>
@@ -12,7 +12,7 @@ import com.mone.server.casemanagerframework.corn.pagination.BasePageOrderParam;
  * @Description :
  * @Classname : ${className}
  * @author : MoTao
- * @create 2020-07-10
+ * @create 2020-07-11
  */
 @Data
 @Accessors(chain = true)

@@ -1,23 +1,21 @@
 package com.mone.server.casemanagerstart.user.controller;
 
-import com.mone.server.casemanagerstart.user.entity.Team;
-import com.mone.server.casemanagerstart.user.service.TeamService;
-import lombok.extern.slf4j.Slf4j;
-import com.mone.server.casemanagerstart.user.param.TeamPageParam;
-import com.mone.server.casemanagerframework.common.controller.BaseController;
-import com.mone.server.casemanagerstart.user.vo.TeamQueryVo;
-import com.mone.server.casemanagerframework.common.reselt.ApiResult;
-import com.mone.server.casemanagerframework.corn.pagination.Paging;
-import com.mone.server.casemanagerframework.common.param.IdParam;
 import com.mone.server.casemanagerframework.aop.log.annotation.Module;
 import com.mone.server.casemanagerframework.aop.log.annotation.OperationLog;
 import com.mone.server.casemanagerframework.aop.log.enums.OperationLogType;
+import com.mone.server.casemanagerframework.common.controller.BaseController;
+import com.mone.server.casemanagerframework.common.reselt.ApiResult;
+import com.mone.server.casemanagerframework.corn.pagination.Paging;
 import com.mone.server.casemanagerframework.corn.validator.groups.Add;
 import com.mone.server.casemanagerframework.corn.validator.groups.Update;
-import org.springframework.validation.annotation.Validated;
+import com.mone.server.casemanagerstart.user.param.TeamPageParam;
+import com.mone.server.casemanagerstart.user.service.TeamService;
+import com.mone.server.casemanagerstart.user.vo.TeamQueryVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -25,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
  * @Description :
  * @Classname : ${className}
  * @author : MoTao
- * @create 2020-07-10
+ * @create 2020-07-11
  */
 @Slf4j
 @RestController
@@ -76,7 +74,7 @@ public class TeamController extends BaseController {
     @GetMapping("/info/{id}")
     @OperationLog(name = "系统组织表详情", type = OperationLogType.INFO)
     @ApiOperation(value = "系统组织表详情", response = TeamQueryVo.class)
-    public ApiResult getTeam(@PathVariable("id") Long id) throws Exception {
+    public ApiResult getTeam(@PathVariable("id") Integer id) throws Exception {
         TeamQueryVo teamQueryVo = teamService.getTeamById(id);
         return ApiResult.ok(teamQueryVo);
     }

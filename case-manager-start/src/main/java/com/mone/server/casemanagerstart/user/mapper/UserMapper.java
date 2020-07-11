@@ -1,15 +1,14 @@
 package com.mone.server.casemanagerstart.user.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mone.server.casemanagerstart.user.entity.User;
 import com.mone.server.casemanagerstart.user.param.UserPageParam;
 import com.mone.server.casemanagerstart.user.vo.UserQueryVo;
-
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.apache.ibatis.annotations.Param;
 import java.io.Serializable;
 
 /**
@@ -17,7 +16,7 @@ import java.io.Serializable;
  * @Description :
  * @Classname : ${className}
  * @author : MoTao
- * @create 2020-07-10
+ * @create 2020-07-11
  */
 @Repository
 public interface UserMapper extends BaseMapper<User> {
@@ -34,7 +33,7 @@ public interface UserMapper extends BaseMapper<User> {
          * 获取分页对象
          *
          * @param page
-         * @param userQueryParam
+         * @param
          * @return
          */
     IPage<UserQueryVo> getUserPageList(@Param("page") Page page, @Param("param") UserPageParam userPageParam);

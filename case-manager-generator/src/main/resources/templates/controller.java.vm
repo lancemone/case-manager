@@ -112,7 +112,7 @@ public class ${table.controllerName} {
     @OperationLog(name = "删除$!{table.comment}", type = OperationLogType.DELETE)
     #end
     @ApiOperation(value = "删除$!{table.comment}", response = ApiResult.class)
-    public ApiResult delete${entity}(@PathVariable("id") Long id) throws Exception {
+    public ApiResult delete${entity}(@PathVariable("id") Integer id) throws Exception {
         boolean flag = ${cfg.serviceObjectName}.delete${entity}(id);
         return ApiResult.result(flag);
     }

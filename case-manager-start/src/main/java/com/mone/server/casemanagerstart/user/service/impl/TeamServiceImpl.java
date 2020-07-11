@@ -1,27 +1,28 @@
 package com.mone.server.casemanagerstart.user.service.impl;
 
-import com.mone.server.casemanagerstart.user.entity.Team;
-import com.mone.server.casemanagerstart.user.mapper.TeamMapper;
-import com.mone.server.casemanagerstart.user.service.TeamService;
-import com.mone.server.casemanagerstart.user.param.TeamPageParam;
-import com.mone.server.casemanagerstart.user.vo.TeamQueryVo;
-import com.mone.server.casemanagerframework.common.service.BaseServiceImpl;
-import com.mone.server.casemanagerframework.corn.pagination.Paging;
-import com.mone.server.casemanagerframework.corn.pagination.PageInfo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.springframework.transaction.annotation.Transactional;
+import com.mone.server.casemanagerframework.common.service.BaseServiceImpl;
+import com.mone.server.casemanagerframework.corn.pagination.PageInfo;
+import com.mone.server.casemanagerframework.corn.pagination.Paging;
+import com.mone.server.casemanagerstart.user.mapper.TeamMapper;
+import com.mone.server.casemanagerstart.user.param.TeamPageParam;
+import com.mone.server.casemanagerstart.user.service.TeamService;
+import com.mone.server.casemanagerstart.user.vo.TeamQueryVo;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.io.Serializable;
 
 /**
  * 系统组织表 服务实现类
  * @Description :
  * @Classname : ${className}
  * @author : MoTao
- * @create 2020-07-10
+ * @create 2020-07-11
  */
 @Slf4j
 @Service
