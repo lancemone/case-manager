@@ -23,7 +23,7 @@ import java.util.Set;
 @Accessors(chain = true)
 @ApiModel(value = "UserQueryVo对象")
 public class UserQueryVo implements Serializable {
-private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private Integer id;
 

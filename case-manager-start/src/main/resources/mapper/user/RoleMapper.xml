@@ -9,13 +9,13 @@
                 id, code, name, remarks
         </sql>
 
-        <select id="getRoleById" resultType="com.mone.server.casemanagerstart.user.vo.RoleQueryVo">
+        <select id="getRoleById" resultType="com.mone.server.casemanagerstart.user.entity.Role">
             select
             <include refid="Base_Column_List"/>
             from cmu_role where id = #{id}
         </select>
 
-        <select id="getRolePageList" parameterType="com.mone.server.casemanagerstart.user.param.RolePageParam" resultType="com.mone.server.casemanagerstart.user.vo.RoleQueryVo">
+        <select id="getRolePageList" parameterType="com.mone.server.casemanagerstart.user.param.CommonPageParam" resultType="com.mone.server.casemanagerstart.user.entity.Role">
             select
             <include refid="Base_Column_List"/>
             from cmu_role
