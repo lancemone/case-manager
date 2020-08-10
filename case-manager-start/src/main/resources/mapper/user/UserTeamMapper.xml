@@ -9,13 +9,13 @@
                 id, uid, tid, leader
         </sql>
 
-        <select id="getUserTeamById" resultType="com.mone.server.casemanagerstart.user.vo.UserTeamQueryVo">
+        <select id="getUserTeamById" resultType="com.mone.server.casemanagerstart.user.vo.output.UserTeamQueryVo">
             select
             <include refid="Base_Column_List"/>
             from cmu_user_team where id = #{id}
         </select>
 
-        <select id="getUserTeamPageList" parameterType="com.mone.server.casemanagerstart.user.param.UserTeamPageParam" resultType="com.mone.server.casemanagerstart.user.vo.UserTeamQueryVo">
+        <select id="getUserTeamPageList" parameterType="com.mone.server.casemanagerstart.user.param.UserTeamPageParam" resultType="com.mone.server.casemanagerstart.user.vo.output.UserTeamQueryVo">
             select
             <include refid="Base_Column_List"/>
             from cmu_user_team

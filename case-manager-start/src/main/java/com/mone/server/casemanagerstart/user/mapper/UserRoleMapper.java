@@ -7,8 +7,7 @@ import com.mone.server.casemanagerstart.user.entity.Role;
 import com.mone.server.casemanagerstart.user.entity.User;
 import com.mone.server.casemanagerstart.user.entity.UserRole;
 import com.mone.server.casemanagerstart.user.param.UserRolePageParam;
-import com.mone.server.casemanagerstart.user.vo.RoleQueryVO;
-import com.mone.server.casemanagerstart.user.vo.UserRoleQueryVo;
+import com.mone.server.casemanagerstart.user.vo.output.UserRoleQueryVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -51,4 +50,5 @@ public interface UserRoleMapper extends BaseMapper<UserRole> {
      */
     IPage<UserRoleQueryVo> getUserRolePageList(@Param("page") Page page, @Param("param") UserRolePageParam userRolePageParam);
 
+    UserRoleQueryVo getUserRoleById(Serializable id);
 }

@@ -16,14 +16,14 @@ case-manager:
 
 spring:
   datasource:
-    url:
-    username:
-    password:
+    url: jdbc:mysql://cdb-4x9gogum.bj.tencentcdb.com:10247/case_manager?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: sJ8UPhQ_LA94tUm
 
   # Redis配置
   redis:
-    database:
-    host:
-    password:
-    port:
+    database: 0
+    host: 127.0.0.1
+    password: tecu5puc
+    port: 6379
 

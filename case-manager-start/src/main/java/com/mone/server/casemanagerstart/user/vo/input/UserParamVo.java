@@ -26,8 +26,8 @@ public class UserParamVo {
     @NotNull(message = "用户名不能为空")
     private String username;
 
-    @ApiModelProperty("用户密码,默认值111111")
-    private String password;
+//    @ApiModelProperty("用户密码,默认值111111")
+//    private String password;
 
     @ApiModelProperty("邮箱")
     private String email;

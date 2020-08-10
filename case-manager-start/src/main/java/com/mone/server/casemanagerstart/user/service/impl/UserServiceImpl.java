@@ -10,7 +10,7 @@ import com.mone.server.casemanagerstart.user.entity.User;
 import com.mone.server.casemanagerstart.user.mapper.UserMapper;
 import com.mone.server.casemanagerstart.user.param.UserPageParam;
 import com.mone.server.casemanagerstart.user.service.UserService;
-import com.mone.server.casemanagerstart.user.vo.UserQueryVo;
+import com.mone.server.casemanagerstart.user.vo.output.UserQueryVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

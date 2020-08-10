@@ -1,4 +1,4 @@
-package com.mone.server.casemanagerstart.user.vo;
+package com.mone.server.casemanagerstart.user.vo.output;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

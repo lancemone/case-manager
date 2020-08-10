@@ -9,13 +9,13 @@
                 id, username, password, email, phone, salt, verify, first_login, enable
         </sql>
 
-        <select id="getUserById" resultType="com.mone.server.casemanagerstart.user.vo.UserQueryVo">
+        <select id="getUserById" resultType="com.mone.server.casemanagerstart.user.vo.output.UserQueryVo">
             select
             <include refid="Base_Column_List"/>
             from cmu_user where id = #{id}
         </select>
 
-        <select id="getUserPageList" parameterType="com.mone.server.casemanagerstart.user.param.UserPageParam" resultType="com.mone.server.casemanagerstart.user.vo.UserQueryVo">
+        <select id="getUserPageList" parameterType="com.mone.server.casemanagerstart.user.param.UserPageParam" resultType="com.mone.server.casemanagerstart.user.vo.output.UserQueryVo">
             select
             <include refid="Base_Column_List"/>
             from cmu_user

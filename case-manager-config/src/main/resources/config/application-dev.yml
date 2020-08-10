@@ -13,9 +13,9 @@ spring:
   datasource:
     # MySQL在高版本需要指明是否进行SSL连接 解决则加上 &useSSL=false
     # JDBC 连接到mysql-connector-java 6+以上的需要指定时区 serverTimezone=GMT%2B8
-    url: jdbc:mysql://cdb-4x9gogum.bj.tencentcdb.com:10247/case_manager?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://cdb-lo0x1fd2.bj.tencentcdb.com:10164/case_manager?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
     username: root
-    password: sJ8UPhQ_LA94tUm
+    password: 7eYvAb!9X6ziFNX
 
   # Redis配置
   redis:

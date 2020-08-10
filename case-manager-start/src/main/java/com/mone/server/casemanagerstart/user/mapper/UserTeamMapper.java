@@ -3,8 +3,9 @@ package com.mone.server.casemanagerstart.user.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.mone.server.casemanagerstart.user.entity.UserTeam;
 import com.mone.server.casemanagerstart.user.param.UserTeamPageParam;
-import com.mone.server.casemanagerstart.user.vo.UserTeamQueryVo;
+import com.mone.server.casemanagerstart.user.vo.output.UserTeamQueryVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

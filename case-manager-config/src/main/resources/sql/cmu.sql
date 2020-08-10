@@ -1,6 +1,6 @@
-# 数据库信息: cdb-4x9gogum.bj.tencentcdb.com:10247/case_manager
+# 数据库信息: cdb-lo0x1fd2.bj.tencentcdb.com:10164/case_manager
 # username: root
-# password: sJ8UPhQ_LA94tUm
+# password: 7eYvAb!9X6ziFNX
 
 # cmu_*:  系统用户相关表
 drop table if exists `cmu_user_role`;

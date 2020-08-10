@@ -4,7 +4,7 @@ import com.mone.server.casemanagerframework.common.service.BaseService;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
 import com.mone.server.casemanagerstart.user.entity.User;
 import com.mone.server.casemanagerstart.user.param.UserPageParam;
-import com.mone.server.casemanagerstart.user.vo.UserQueryVo;
+import com.mone.server.casemanagerstart.user.vo.output.UserQueryVo;
 
 import java.io.Serializable;
 

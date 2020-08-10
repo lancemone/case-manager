@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mone.server.casemanagerstart.user.entity.User;
 import com.mone.server.casemanagerstart.user.param.UserPageParam;
-import com.mone.server.casemanagerstart.user.vo.UserQueryVo;
+import com.mone.server.casemanagerstart.user.vo.output.UserQueryVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

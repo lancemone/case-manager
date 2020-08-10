@@ -2,8 +2,9 @@ package com.mone.server.casemanagerstart.user.service;
 
 import com.mone.server.casemanagerframework.common.service.BaseService;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
+import com.mone.server.casemanagerstart.user.entity.UserRole;
 import com.mone.server.casemanagerstart.user.param.UserRolePageParam;
-import com.mone.server.casemanagerstart.user.vo.UserRoleQueryVo;
+import com.mone.server.casemanagerstart.user.vo.output.UserRoleQueryVo;
 
 import java.io.Serializable;
 
