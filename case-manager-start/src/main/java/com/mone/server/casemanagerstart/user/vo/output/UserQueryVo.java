@@ -21,7 +21,7 @@ import java.util.Set;
  */
 @Data
 @Accessors(chain = true)
-@ApiModel(value = "UserQueryVo对象")
+@ApiModel(value = "用户信息结果返回对象")
 public class UserQueryVo implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -37,9 +37,11 @@ public class UserQueryVo implements Serializable {
 
     private Boolean enable;
 
-    private Set<RoleQueryVO> roles = Sets.newHashSet();
+    private Integer roleId;
 
-    private Set<Team> teams = Sets.newHashSet();
+    private String roleRemarks;
+
+//    private Set<Team> teams = Sets.newHashSet();
 
     @ApiModelProperty("创建时间")
     private Date createTime;

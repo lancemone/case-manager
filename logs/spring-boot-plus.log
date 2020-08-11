@@ -1,46 +1,46 @@
-2020-08-10 14:57:20.844  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      55 : Starting CaseManagerStartApplication on motao-d1 with PID 1248 (E:\JavaSpace\case-manager\case-manager-start\target\classes started by motao in E:\JavaSpace\case-manager)
-2020-08-10 14:57:20.848  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      655 : The following profiles are active: dev
-2020-08-10 14:57:20.916  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-08-10 14:57:20.916  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-08-10 14:57:23.520  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-08-10 14:57:23.530  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-08-10 14:57:23.644  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 80ms. Found 0 Redis repository interfaces.
-2020-08-10 14:57:23.936  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsLoginLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsLoginLogMapper' mapperInterface. Bean already defined with the same name!
-2020-08-10 14:57:23.937  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsOperationLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsOperationLogMapper' mapperInterface. Bean already defined with the same name!
-2020-08-10 14:57:23.937  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'ipAddressMapper' and 'com.mone.server.casemanagerframework.aop.mapper.IpAddressMapper' mapperInterface. Bean already defined with the same name!
-2020-08-10 14:57:24.443  INFO [restartedMain] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$98a9cd49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-08-10 14:57:25.073  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  108 : Tomcat initialized with port(s): 8888 (http)
-2020-08-10 14:57:25.083  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
-2020-08-10 14:57:25.084  INFO [restartedMain] [] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
-2020-08-10 14:57:25.084  INFO [restartedMain] [] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-08-10 14:57:25.257  INFO [restartedMain] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring embedded WebApplicationContext
-2020-08-10 14:57:25.258  INFO [restartedMain] [] w.s.c.ServletWebServerApplicationContext 285 : Root WebApplicationContext: initialization completed in 4342 ms
-2020-08-10 14:57:25.573  INFO [restartedMain] [] o.s.b.a.e.web.ServletEndpointRegistrar   75 : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
-2020-08-10 14:57:25.816  INFO [restartedMain] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
-2020-08-10 14:57:27.121  INFO [restartedMain] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
-2020-08-10 14:57:29.634  INFO [restartedMain] [] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 15 endpoint(s) beneath base path '/actuator'
-2020-08-10 14:57:29.780  INFO [restartedMain] [] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-10 14:57:29.788  INFO [restartedMain] [] c.m.s.c.config.Swagger2Config            115 : swagger scan basePackages:[com.mone.server.casemanagerstart, com.mone.server.casemanagerframework]
-2020-08-10 14:57:30.182  INFO [restartedMain] [] o.s.s.concurrent.ThreadPoolTaskExecutor  181 : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-10 14:57:30.271  INFO [restartedMain] [] o.s.b.d.a.OptionalLiveReloadServer       58 : LiveReload server is running on port 35729
-2020-08-10 14:57:30.463  INFO [restartedMain] [] o.s.s.c.ThreadPoolTaskScheduler          181 : Initializing ExecutorService
-2020-08-10 14:57:31.085  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
-2020-08-10 14:57:31.161  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  220 : Tomcat started on port(s): 8888 (http) with context path '/api'
-2020-08-10 14:57:31.165  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 160 : Context refreshed
-2020-08-10 14:57:31.211  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 163 : Found 1 custom documentation plugin(s)
-2020-08-10 14:57:31.291  INFO [restartedMain] [] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
-2020-08-10 14:57:31.981  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      61 : Started CaseManagerStartApplication in 12.18 seconds (JVM running for 14.06)
-2020-08-10 14:57:32.022  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        83 : projectFinalName : @boot.artifact.name@
-2020-08-10 14:57:32.023  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        84 : projectVersion : 0.0.1-SNAPSHOT
-2020-08-10 14:57:32.023  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        85 : profileActive : dev
-2020-08-10 14:57:32.023  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        86 : contextPath : /api
-2020-08-10 14:57:32.023  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        87 : serverIp : 127.0.0.1
-2020-08-10 14:57:32.023  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        88 : port : 8888
-2020-08-10 14:57:32.023  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        102 : Admin:   http://127.0.0.1:8000
-2020-08-10 14:57:32.023  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        103 : Home:    http://127.0.0.1:8888/api
-2020-08-10 14:57:32.023  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        104 : Swagger: http://127.0.0.1:8888/api/swagger-ui.html
-2020-08-10 14:57:32.030  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        105 : project start success...........
-2020-08-10 14:57:32.059  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        107 : 
+2020-08-11 09:54:49.409  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      55 : Starting CaseManagerStartApplication on motao-d1 with PID 15196 (E:\JavaSpace\case-manager\case-manager-start\target\classes started by motao in E:\JavaSpace\case-manager)
+2020-08-11 09:54:49.412  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      655 : The following profiles are active: dev
+2020-08-11 09:54:49.489  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-11 09:54:49.489  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-11 09:54:54.931  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-11 09:54:54.936  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-11 09:54:55.072  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 106ms. Found 0 Redis repository interfaces.
+2020-08-11 09:54:55.372  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsLoginLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsLoginLogMapper' mapperInterface. Bean already defined with the same name!
+2020-08-11 09:54:55.372  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsOperationLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsOperationLogMapper' mapperInterface. Bean already defined with the same name!
+2020-08-11 09:54:55.372  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'ipAddressMapper' and 'com.mone.server.casemanagerframework.aop.mapper.IpAddressMapper' mapperInterface. Bean already defined with the same name!
+2020-08-11 09:54:55.939  INFO [restartedMain] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$dbfefed5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-11 09:54:56.886  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  108 : Tomcat initialized with port(s): 8888 (http)
+2020-08-11 09:54:56.895  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
+2020-08-11 09:54:56.895  INFO [restartedMain] [] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
+2020-08-11 09:54:56.896  INFO [restartedMain] [] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-11 09:54:57.055  INFO [restartedMain] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring embedded WebApplicationContext
+2020-08-11 09:54:57.055  INFO [restartedMain] [] w.s.c.ServletWebServerApplicationContext 285 : Root WebApplicationContext: initialization completed in 7566 ms
+2020-08-11 09:54:57.361  INFO [restartedMain] [] o.s.b.a.e.web.ServletEndpointRegistrar   75 : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-08-11 09:54:57.536  INFO [restartedMain] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
+2020-08-11 09:54:58.264  INFO [restartedMain] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
+2020-08-11 09:55:00.300  INFO [restartedMain] [] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-08-11 09:55:00.433  INFO [restartedMain] [] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-11 09:55:00.441  INFO [restartedMain] [] c.m.s.c.config.Swagger2Config            115 : swagger scan basePackages:[com.mone.server.casemanagerstart, com.mone.server.casemanagerframework]
+2020-08-11 09:55:00.873  INFO [restartedMain] [] o.s.s.concurrent.ThreadPoolTaskExecutor  181 : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-11 09:55:00.940  INFO [restartedMain] [] o.s.b.d.a.OptionalLiveReloadServer       58 : LiveReload server is running on port 35729
+2020-08-11 09:55:01.155  INFO [restartedMain] [] o.s.s.c.ThreadPoolTaskScheduler          181 : Initializing ExecutorService
+2020-08-11 09:55:01.651  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
+2020-08-11 09:55:01.685  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  220 : Tomcat started on port(s): 8888 (http) with context path '/api'
+2020-08-11 09:55:01.686  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 160 : Context refreshed
+2020-08-11 09:55:01.720  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 163 : Found 1 custom documentation plugin(s)
+2020-08-11 09:55:01.754  INFO [restartedMain] [] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2020-08-11 09:55:02.106  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      61 : Started CaseManagerStartApplication in 14.0 seconds (JVM running for 16.062)
+2020-08-11 09:55:02.120  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        83 : projectFinalName : @boot.artifact.name@
+2020-08-11 09:55:02.120  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        84 : projectVersion : 0.0.1-SNAPSHOT
+2020-08-11 09:55:02.120  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        85 : profileActive : dev
+2020-08-11 09:55:02.120  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        86 : contextPath : /api
+2020-08-11 09:55:02.120  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        87 : serverIp : 127.0.0.1
+2020-08-11 09:55:02.120  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        88 : port : 8888
+2020-08-11 09:55:02.120  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        102 : Admin:   http://127.0.0.1:8000
+2020-08-11 09:55:02.121  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        103 : Home:    http://127.0.0.1:8888/api
+2020-08-11 09:55:02.121  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        104 : Swagger: http://127.0.0.1:8888/api/swagger-ui.html
+2020-08-11 09:55:02.121  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        105 : project start success...........
+2020-08-11 09:55:02.139  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        107 : 
 [2J[34m ____    __                    __        ____                                                   
 /\  _`\ /\ \__                /\ \__    /\  _`\                                                 
 \ \,\L\_\ \ ,_\    __     _ __\ \ ,_\   \ \,\L\_\  __  __    ___    ___     __    ____    ____  
@@ -50,128 +50,121 @@
     \/_____/\/__/\/__/\/_/ \/_/   \/__/     \/_____/\/___/  \/____/\/____/\/____/\/___/  \/___/ 
                                                                                                 
                                                                                                 [m
-2020-08-10 14:57:32.060  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        53 : 
+2020-08-11 09:55:02.139  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        53 : 
 [2J[33m===========================================================================================
                                                                                   
                                !!!开始启动项目!!!                                      
 =======>>>启动环境: dev===========================================================================================
 [m
-2020-08-10 14:57:32.724  INFO [RMI TCP Connection(5)-10.18.27.7] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-10 14:57:32.724  INFO [RMI TCP Connection(5)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
-2020-08-10 14:57:32.743  INFO [RMI TCP Connection(5)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 19 ms
-2020-08-10 14:57:34.288  WARN [registrationTask1] [] d.c.b.a.c.r.ApplicationRegistrator       93 : Failed to register application as Application(name=case manager, managementUrl=http://127.0.0.1:8888/api/actuator, healthUrl=http://127.0.0.1:8888/api/actuator/health, serviceUrl=http://127.0.0.1:8888/api) at spring-boot-admin ([http://127.0.0.1:8000/instances]): I/O error on POST request for "http://127.0.0.1:8000/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level
-2020-08-10 14:57:35.782  WARN [boundedElastic-1] [] o.s.b.a.r.RedisReactiveHealthIndicator   89 : Redis health check failed
+2020-08-11 09:55:02.810  INFO [RMI TCP Connection(5)-10.18.27.7] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-11 09:55:02.810  INFO [RMI TCP Connection(5)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
+2020-08-11 09:55:02.822  INFO [RMI TCP Connection(5)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 12 ms
+2020-08-11 09:55:04.256  WARN [registrationTask1] [] d.c.b.a.c.r.ApplicationRegistrator       93 : Failed to register application as Application(name=case manager, managementUrl=http://127.0.0.1:8888/api/actuator, healthUrl=http://127.0.0.1:8888/api/actuator/health, serviceUrl=http://127.0.0.1:8888/api) at spring-boot-admin ([http://127.0.0.1:8000/instances]): I/O error on POST request for "http://127.0.0.1:8000/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level
+2020-08-11 09:55:14.559  INFO [http-nio-8888-exec-4] [1293003007831138305] c.m.s.c.aop.BaseLogAop                   546 : [2J[32mrequestInfo:null[m
+2020-08-11 09:55:14.887 ERROR [http-nio-8888-exec-4] [] o.a.c.c.C.[.[.[.[dispatcherServlet]      175 : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.mone.server.casemanagerstart.user.mapper.UserMapper.getUserById] with root cause
 
-org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 211.149.213.243:6379
-	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1225)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1206)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:980)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:441)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:95)
-	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:85)
-	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:225)
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
-	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.mone.server.casemanagerstart.user.mapper.UserMapper.getUserById
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.<init>(MybatisMapperMethod.java:50)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.lambda$cachedMapperMethod$0(MybatisMapperProxy.java:101)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.cachedMapperMethod(MybatisMapperProxy.java:100)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:95)
+	at com.sun.proxy.$Proxy137.getUserById(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy138.getUserById(Unknown Source)
+	at com.mone.server.casemanagerstart.user.service.impl.UserServiceImpl.getUserById(UserServiceImpl.java:55)
+	at com.mone.server.casemanagerstart.user.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$9a7376b2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687)
+	at com.mone.server.casemanagerstart.user.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$7970b778.getUserById(<generated>)
+	at com.mone.server.casemanagerstart.user.controller.UserController.getUser(UserController.java:79)
+	at com.mone.server.casemanagerstart.user.controller.UserController$$FastClassBySpringCGLIB$$5d03083c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.mone.server.casemanagerframework.aop.BaseLogAop.handle(BaseLogAop.java:299)
+	at com.mone.server.casemanagerstart.aop.Aop.doAround(Aop.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.mone.server.casemanagerstart.user.controller.UserController$$EnhancerBySpringCGLIB$$572d09c.getUser(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 211.149.213.243:6379
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
-	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:234)
-	at io.lettuce.core.RedisClient.connect(RedisClient.java:207)
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
-	at java.util.Optional.orElseGet(Optional.java:267)
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
-	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
-	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:209)
-	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:199)
-	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58)
-	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
-	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
-	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
-	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
-	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
-	... 15 common frames omitted
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /211.149.213.243:6379
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-08-10 18:25:48.879  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      55 : Starting CaseManagerStartApplication on motao-d1 with PID 19036 (E:\JavaSpace\case-manager\case-manager-start\target\classes started by motao in E:\JavaSpace\case-manager)
-2020-08-10 18:25:48.884  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      655 : The following profiles are active: dev
-2020-08-10 18:25:48.933  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-08-10 18:25:48.933  INFO [restartedMain] [] .e.DevToolsPropertyDefaultsPostProcessor 225 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-08-10 18:25:50.611  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-08-10 18:25:50.613  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-08-10 18:25:50.672  INFO [restartedMain] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 41ms. Found 0 Redis repository interfaces.
-2020-08-10 18:25:50.871  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsLoginLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsLoginLogMapper' mapperInterface. Bean already defined with the same name!
-2020-08-10 18:25:50.872  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'cmsOperationLogMapper' and 'com.mone.server.casemanagerframework.aop.mapper.CmsOperationLogMapper' mapperInterface. Bean already defined with the same name!
-2020-08-10 18:25:50.872  WARN [restartedMain] [] o.m.s.mapper.ClassPathMapperScanner      44 : Skipping MapperFactoryBean with name 'ipAddressMapper' and 'com.mone.server.casemanagerframework.aop.mapper.IpAddressMapper' mapperInterface. Bean already defined with the same name!
-2020-08-10 18:25:51.271  INFO [restartedMain] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$ab497662] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-08-10 18:25:51.870  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  108 : Tomcat initialized with port(s): 8888 (http)
-2020-08-10 18:25:51.880  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Initializing ProtocolHandler ["http-nio-8888"]
-2020-08-10 18:25:51.881  INFO [restartedMain] [] o.apache.catalina.core.StandardService   173 : Starting service [Tomcat]
-2020-08-10 18:25:51.881  INFO [restartedMain] [] org.apache.catalina.core.StandardEngine  173 : Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-08-10 18:25:52.050  INFO [restartedMain] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring embedded WebApplicationContext
-2020-08-10 18:25:52.050  INFO [restartedMain] [] w.s.c.ServletWebServerApplicationContext 285 : Root WebApplicationContext: initialization completed in 3117 ms
-2020-08-10 18:25:52.267  INFO [restartedMain] [] o.s.b.a.e.web.ServletEndpointRegistrar   75 : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
-2020-08-10 18:25:52.427  INFO [restartedMain] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
-2020-08-10 18:25:53.347  INFO [restartedMain] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
-2020-08-10 18:25:55.368  INFO [restartedMain] [] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 15 endpoint(s) beneath base path '/actuator'
-2020-08-10 18:25:55.472  INFO [restartedMain] [] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-10 18:25:55.481  INFO [restartedMain] [] c.m.s.c.config.Swagger2Config            115 : swagger scan basePackages:[com.mone.server.casemanagerstart, com.mone.server.casemanagerframework]
-2020-08-10 18:25:55.797  INFO [restartedMain] [] o.s.s.concurrent.ThreadPoolTaskExecutor  181 : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-10 18:25:55.868  INFO [restartedMain] [] o.s.b.d.a.OptionalLiveReloadServer       58 : LiveReload server is running on port 35729
-2020-08-10 18:25:56.032  INFO [restartedMain] [] o.s.s.c.ThreadPoolTaskScheduler          181 : Initializing ExecutorService
-2020-08-10 18:25:56.545  INFO [restartedMain] [] o.a.coyote.http11.Http11NioProtocol      173 : Starting ProtocolHandler ["http-nio-8888"]
-2020-08-10 18:25:56.575  INFO [restartedMain] [] o.s.b.w.embedded.tomcat.TomcatWebServer  220 : Tomcat started on port(s): 8888 (http) with context path '/api'
-2020-08-10 18:25:56.577  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 160 : Context refreshed
-2020-08-10 18:25:56.598  INFO [restartedMain] [] d.s.w.p.DocumentationPluginsBootstrapper 163 : Found 1 custom documentation plugin(s)
-2020-08-10 18:25:56.642  INFO [restartedMain] [] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
-2020-08-10 18:25:57.112  INFO [restartedMain] [] c.m.s.c.CaseManagerStartApplication      61 : Started CaseManagerStartApplication in 9.003 seconds (JVM running for 10.355)
-2020-08-10 18:25:57.121  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        83 : projectFinalName : @boot.artifact.name@
-2020-08-10 18:25:57.122  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        84 : projectVersion : 0.0.1-SNAPSHOT
-2020-08-10 18:25:57.122  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        85 : profileActive : dev
-2020-08-10 18:25:57.122  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        86 : contextPath : /api
-2020-08-10 18:25:57.122  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        87 : serverIp : 127.0.0.1
-2020-08-10 18:25:57.122  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        88 : port : 8888
-2020-08-10 18:25:57.122  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        102 : Admin:   http://127.0.0.1:8000
-2020-08-10 18:25:57.123  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        103 : Home:    http://127.0.0.1:8888/api
-2020-08-10 18:25:57.123  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        104 : Swagger: http://127.0.0.1:8888/api/swagger-ui.html
-2020-08-10 18:25:57.123  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        105 : project start success...........
-2020-08-10 18:25:57.130  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        107 : 
-[2J[34m ____    __                    __        ____                                                   
-/\  _`\ /\ \__                /\ \__    /\  _`\                                                 
-\ \,\L\_\ \ ,_\    __     _ __\ \ ,_\   \ \,\L\_\  __  __    ___    ___     __    ____    ____  
- \/_\__ \\ \ \/  /'__`\  /\`'__\ \ \/    \/_\__ \ /\ \/\ \  /'___\ /'___\ /'__`\ /',__\  /',__\ 
-   /\ \L\ \ \ \_/\ \L\.\_\ \ \/ \ \ \_     /\ \L\ \ \ \_\ \/\ \__//\ \__//\  __//\__, `\/\__, `\
-   \ `\____\ \__\ \__/.\_\\ \_\  \ \__\    \ `\____\ \____/\ \____\ \____\ \____\/\____/\/\____/
-    \/_____/\/__/\/__/\/_/ \/_/   \/__/     \/_____/\/___/  \/____/\/____/\/____/\/___/  \/___/ 
-                                                                                                
-                                                                                                [m
-2020-08-10 18:25:57.131  INFO [restartedMain] [] c.m.s.c.util.PrintApplicationInfo        53 : 
-[2J[33m===========================================================================================
-                                                                                  
-                               !!!开始启动项目!!!                                      
-=======>>>启动环境: dev===========================================================================================
-[m
-2020-08-10 18:25:57.621  INFO [RMI TCP Connection(1)-10.18.27.7] [] o.a.c.c.C.[Tomcat].[localhost].[/api]    173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-10 18:25:57.621  INFO [RMI TCP Connection(1)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        525 : Initializing Servlet 'dispatcherServlet'
-2020-08-10 18:25:57.646  INFO [RMI TCP Connection(1)-10.18.27.7] [] o.s.web.servlet.DispatcherServlet        547 : Completed initialization in 24 ms
-2020-08-10 18:25:59.211  WARN [registrationTask1] [] d.c.b.a.c.r.ApplicationRegistrator       93 : Failed to register application as Application(name=case manager, managementUrl=http://127.0.0.1:8888/api/actuator, healthUrl=http://127.0.0.1:8888/api/actuator/health, serviceUrl=http://127.0.0.1:8888/api) at spring-boot-admin ([http://127.0.0.1:8000/instances]): I/O error on POST request for "http://127.0.0.1:8000/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level

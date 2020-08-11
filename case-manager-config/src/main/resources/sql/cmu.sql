@@ -3,8 +3,9 @@
 # password: 7eYvAb!9X6ziFNX
 
 # cmu_*:  系统用户相关表
-drop table if exists `cmu_user_role`;
-drop table if exists `cmu_user_team`;
+# drop table if exists `cmu_user_team_role`;
+drop table if exists cmu_user_team;
+drop table if exists cmu_user_role;
 drop table if  exists `cmu_user`;
 create table cmu_user
 (
@@ -39,7 +40,7 @@ create table cmu_role
     primary key (id),
     unique key (code),
     unique key (name)
-) engine InnoDB default charset utf8 comment '系统角色表' ;
+) engine InnoDB default charset utf8 comment '系统角色表';
 
 
 drop table if exists `cmu_user_role`;
@@ -63,12 +64,14 @@ create table cmu_team
 (
     id int(5) auto_increment comment '组织id',
     name varchar(100) not null comment '组织名称',
+    parent_id int(5) not null default 0 comment '父id',
     remarks varchar(255) not null default '' comment '组织简介',
     address varchar(100) not null default '' comment '地址',
     create_time datetime(0) default now() comment '创建时间',
     update_time datetime(0) default now() comment '更新时间',
 
-    primary key (id)
+    primary key (id),
+    index index_parent_id(parent_id)
 ) engine InnoDB default charset utf8 comment '系统组织表' ;
 
 
@@ -85,7 +88,23 @@ create table cmu_user_team
     primary key (id),
     foreign key (uid) references cmu_user(id),
     foreign key (tid) references cmu_team(id)
-) engine InnoDB default charset utf8 comment '系统用户-组织表' ;
+) engine InnoDB default charset utf8 comment '系统用户-组织表';
+
+# drop table if exists cmu_user_team_role;
+# create table cmu_user_team_role(
+#     id int(10) auto_increment comment '主键ID',
+#     uid int(11) not null comment '用户ID',
+#     tid int(5) not null comment '组织ID',
+#     rid int(5) not null comment '角色ID',
+#     leader tinyint(1) not null default 0 comment '是否为组织负责人: 1:是;0:否',
+#     create_time datetime(0) default now() comment '创建时间',
+#     update_time datetime(0) default now() comment '更新时间',
+#
+#     primary key (id),
+#     foreign key (uid) references cmu_user(id),
+#     foreign key (tid) references cmu_team(id),
+#     foreign key (rid) references cmu_role(id)
+# ) engine InnoDB default charset utf8 comment '系统用户-组织表';
 
 # cms_*:  系统信息相关表
 
@@ -98,15 +117,11 @@ create table if not exists ip_address
     area varchar(45) null comment '区域',
     operator varchar(6) null comment '运营商',
     ip_start_num bigint(10) not null,
-    ip_end_num bigint(10) not null
-)
-    engine InnoDB default charset utf8 comment 'IP地址';
+    ip_end_num bigint(10) not null,
 
-create index ip_address_ip_end_num_index
-    on ip_address (ip_end_num);
-
-create index ip_address_ip_start_num_index
-    on ip_address (ip_start_num);
+    index ip_address_ip_end_num_index(ip_end_num),
+    index ip_address_ip_start_num_index(ip_start_num)
+) engine InnoDB default charset utf8 comment 'IP地址';
 
 drop table if exists `cms_login_log`;
 create table cms_login_log
@@ -134,7 +149,7 @@ create table cms_login_log
     primary key (id)
 ) engine InnoDB default charset utf8 comment '系统登录日志表' ;
 
-drop table if exists `cms_login_log`;
+drop table if exists `cms_operation_log`;
 create table cms_operation_log
 (
     id bigint(18) auto_increment comment '主键'

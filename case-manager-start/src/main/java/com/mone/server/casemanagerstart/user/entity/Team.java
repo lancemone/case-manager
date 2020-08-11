@@ -14,6 +14,7 @@ import lombok.experimental.Accessors;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 系统组织表
@@ -40,6 +41,9 @@ public class Team extends BaseEntity<Team> {
     @ApiModelProperty("组织名称")
     private String name;
 
+    @ApiModelProperty("父id")
+    private int parentId;
+
     @NotBlank(message = "组织简介不能为空")
     @ApiModelProperty("组织简介")
     private String remarks;
@@ -53,5 +57,7 @@ public class Team extends BaseEntity<Team> {
 
     @ApiModelProperty("更新时间")
     private Date updateTime;
+
+    private List<Team> children;
 
 }
