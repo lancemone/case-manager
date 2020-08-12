@@ -1,5 +1,6 @@
 package com.mone.server.casemanagerstart.user.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -52,7 +53,10 @@ public class UserServiceImpl extends BaseServiceImpl<UserMapper, User> implement
 
     @Override
     public UserQueryVo getUserById(Serializable id) throws Exception {
-        return userMapper.getUserById(id);
+        User user = baseMapper.getUserInfoById(id);
+        UserQueryVo userQueryVo = new UserQueryVo();
+        BeanUtil.copyProperties(user, userQueryVo);
+        return userQueryVo;
     }
 
     @Override

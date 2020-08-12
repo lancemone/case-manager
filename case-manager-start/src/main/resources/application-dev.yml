@@ -58,7 +58,7 @@ spring:
 # mybatis-plus相关配置
 mybatis-plus:
   # xml扫描，多个目录用逗号或者分号分隔（告诉 Mapper 所对应的 XML 文件位置）
-  mapper-locations: classpath*:mapper/*Mapper.xml
+  mapper-locations: classpath*:mapper/*/*Mapper.xml
 
 #  global-config:
 #    db-config:
@@ -67,7 +67,7 @@ mybatis-plus:
 #  configuration:
 #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   # 实体扫描
-#  type-aliases-package: org.mone.server.webstart.entity
+  type-aliases-package: com.mone.server.casemanagerstart.*.entity
 
 swagger:
   title: CaseManager API Documentation

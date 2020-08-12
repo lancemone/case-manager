@@ -1,22 +1,15 @@
 package com.mone.server.casemanagerstart.user.service.impl;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.metadata.OrderItem;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mone.server.casemanagerframework.common.service.BaseServiceImpl;
-import com.mone.server.casemanagerframework.corn.pagination.PageInfo;
-import com.mone.server.casemanagerframework.corn.pagination.Paging;
 import com.mone.server.casemanagerstart.user.entity.Team;
 import com.mone.server.casemanagerstart.user.mapper.TeamMapper;
-import com.mone.server.casemanagerstart.user.param.TeamPageParam;
 import com.mone.server.casemanagerstart.user.service.TeamService;
-import com.mone.server.casemanagerstart.user.vo.output.TeamQueryVo;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 系统组织表 服务实现类
@@ -29,8 +22,11 @@ import java.io.Serializable;
 @Service
 public class TeamServiceImpl extends BaseServiceImpl<TeamMapper, Team> implements TeamService {
 
-    @Autowired
-    private TeamMapper teamMapper;
+    private final TeamMapper teamMapper;
+
+    public TeamServiceImpl(TeamMapper teamMapper) {
+        this.teamMapper = teamMapper;
+    }
 
     @Transactional(rollbackFor = Exception.class)
     @Override
@@ -51,15 +47,22 @@ public class TeamServiceImpl extends BaseServiceImpl<TeamMapper, Team> implement
     }
 
     @Override
-    public TeamQueryVo getTeamById(Serializable id) throws Exception {
-        return teamMapper.getTeamById(id);
+    public Team getTeamInfoById(Serializable id) throws Exception {
+        return baseMapper.getTeamInfoById(id);
     }
 
+    // 根据父级id获取此节点的部门数据
     @Override
-    public Paging<TeamQueryVo> getTeamPageList(TeamPageParam teamPageParam) throws Exception {
-        Page<TeamQueryVo> page = new PageInfo<>(teamPageParam, OrderItem.desc(getLambdaColumn(Team::getCreateTime)));
-        IPage<TeamQueryVo> iPage = teamMapper.getTeamPageList(page, teamPageParam);
-        return new Paging<TeamQueryVo>(iPage);
+    public List<Team> getTeamsByParentId(Serializable parentId) throws Exception {
+        List<Team> teams = baseMapper.getTeamsByParentId(parentId);
+        return teams;
     }
+
+//    @Override
+//    public Paging<TeamQueryVo> getTeamPageList(TeamPageParam teamPageParam) throws Exception {
+//        Page<TeamQueryVo> page = new PageInfo<>(teamPageParam, OrderItem.desc(getLambdaColumn(Team::getCreateTime)));
+//        IPage<TeamQueryVo> iPage = teamMapper.getTeamPageList(page, teamPageParam);
+//        return new Paging<TeamQueryVo>(iPage);
+//    }
 
 }

@@ -58,6 +58,4 @@ public class Team extends BaseEntity<Team> {
     @ApiModelProperty("更新时间")
     private Date updateTime;
 
-    private List<Team> children;
-
 }

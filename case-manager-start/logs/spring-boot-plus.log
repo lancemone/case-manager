@@ -1,0 +1,86 @@
+2020-08-12 16:21:24.206  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     55 : Starting TeamServiceImplTest on motao-d1 with PID 1496 (started by motao in E:\JavaSpace\case-manager\case-manager-start)
+2020-08-12 16:21:24.207  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     655 : The following profiles are active: dev
+2020-08-12 16:21:25.693  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-12 16:21:25.697  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-12 16:21:25.755  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 41ms. Found 0 Redis repository interfaces.
+2020-08-12 16:21:26.685  INFO [main] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$e344585b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-12 16:21:26.983  INFO [main] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
+2020-08-12 16:21:27.868  INFO [main] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
+2020-08-12 16:21:30.266  INFO [main] [] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-08-12 16:21:30.509  INFO [main] [] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-12 16:21:30.517  INFO [main] [] c.m.s.c.config.Swagger2Config            115 : swagger scan basePackages:[com.mone.server.casemanagerstart, com.mone.server.casemanagerframework]
+2020-08-12 16:21:31.288  INFO [main] [] o.s.s.concurrent.ThreadPoolTaskExecutor  181 : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-12 16:21:31.636  INFO [main] [] o.s.s.c.ThreadPoolTaskScheduler          181 : Initializing ExecutorService
+2020-08-12 16:21:32.056  INFO [main] [] d.s.w.p.DocumentationPluginsBootstrapper 160 : Context refreshed
+2020-08-12 16:21:32.093  INFO [main] [] d.s.w.p.DocumentationPluginsBootstrapper 163 : Found 1 custom documentation plugin(s)
+2020-08-12 16:21:32.157  INFO [main] [] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2020-08-12 16:21:32.478  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     61 : Started TeamServiceImplTest in 8.883 seconds (JVM running for 10.92)
+2020-08-12 16:21:32.908  INFO [SpringContextShutdownHook] [] o.s.s.c.ThreadPoolTaskScheduler          218 : Shutting down ExecutorService
+2020-08-12 16:21:32.909  INFO [SpringContextShutdownHook] [] o.s.s.concurrent.ThreadPoolTaskExecutor  218 : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-12 16:21:32.934  INFO [SpringContextShutdownHook] [] com.alibaba.druid.pool.DruidDataSource   2029 : {dataSource-1} closing ...
+2020-08-12 16:21:32.947  INFO [SpringContextShutdownHook] [] com.alibaba.druid.pool.DruidDataSource   2101 : {dataSource-1} closed
+2020-08-12 16:24:02.712  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     55 : Starting TeamServiceImplTest on motao-d1 with PID 1412 (started by motao in E:\JavaSpace\case-manager\case-manager-start)
+2020-08-12 16:24:02.714  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     655 : The following profiles are active: dev
+2020-08-12 16:24:04.159  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-12 16:24:04.162  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-12 16:24:04.219  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2020-08-12 16:24:05.047  INFO [main] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$e344585b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-12 16:24:05.337  INFO [main] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
+2020-08-12 16:24:06.129  INFO [main] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
+2020-08-12 16:24:08.348  INFO [main] [] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-08-12 16:24:08.610  INFO [main] [] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-12 16:24:08.617  INFO [main] [] c.m.s.c.config.Swagger2Config            115 : swagger scan basePackages:[com.mone.server.casemanagerstart, com.mone.server.casemanagerframework]
+2020-08-12 16:24:09.334  INFO [main] [] o.s.s.concurrent.ThreadPoolTaskExecutor  181 : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-12 16:24:09.692  INFO [main] [] o.s.s.c.ThreadPoolTaskScheduler          181 : Initializing ExecutorService
+2020-08-12 16:24:10.093  INFO [main] [] d.s.w.p.DocumentationPluginsBootstrapper 160 : Context refreshed
+2020-08-12 16:24:10.123  INFO [main] [] d.s.w.p.DocumentationPluginsBootstrapper 163 : Found 1 custom documentation plugin(s)
+2020-08-12 16:24:10.173  INFO [main] [] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2020-08-12 16:24:10.467  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     61 : Started TeamServiceImplTest in 8.295 seconds (JVM running for 9.834)
+2020-08-12 16:24:10.821  INFO [SpringContextShutdownHook] [] o.s.s.c.ThreadPoolTaskScheduler          218 : Shutting down ExecutorService
+2020-08-12 16:24:10.821  INFO [SpringContextShutdownHook] [] o.s.s.concurrent.ThreadPoolTaskExecutor  218 : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-12 16:24:10.848  INFO [SpringContextShutdownHook] [] com.alibaba.druid.pool.DruidDataSource   2029 : {dataSource-1} closing ...
+2020-08-12 16:24:10.859  INFO [SpringContextShutdownHook] [] com.alibaba.druid.pool.DruidDataSource   2101 : {dataSource-1} closed
+2020-08-12 16:36:11.583  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     55 : Starting TeamServiceImplTest on motao-d1 with PID 4664 (started by motao in E:\JavaSpace\case-manager\case-manager-start)
+2020-08-12 16:36:11.585  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     655 : The following profiles are active: dev
+2020-08-12 16:36:13.277  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-12 16:36:13.282  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-12 16:36:13.345  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 42ms. Found 0 Redis repository interfaces.
+2020-08-12 16:36:14.267  INFO [main] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$a6d186e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-12 16:36:14.575  INFO [main] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
+2020-08-12 16:36:15.437  INFO [main] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
+2020-08-12 16:36:17.925  INFO [main] [] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-08-12 16:36:18.203  INFO [main] [] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-12 16:36:18.212  INFO [main] [] c.m.s.c.config.Swagger2Config            115 : swagger scan basePackages:[com.mone.server.casemanagerstart, com.mone.server.casemanagerframework]
+2020-08-12 16:36:18.959  INFO [main] [] o.s.s.concurrent.ThreadPoolTaskExecutor  181 : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-12 16:36:19.344  INFO [main] [] o.s.s.c.ThreadPoolTaskScheduler          181 : Initializing ExecutorService
+2020-08-12 16:36:19.725  INFO [main] [] d.s.w.p.DocumentationPluginsBootstrapper 160 : Context refreshed
+2020-08-12 16:36:19.756  INFO [main] [] d.s.w.p.DocumentationPluginsBootstrapper 163 : Found 1 custom documentation plugin(s)
+2020-08-12 16:36:19.801  INFO [main] [] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2020-08-12 16:36:20.102  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     61 : Started TeamServiceImplTest in 9.234 seconds (JVM running for 10.957)
+2020-08-12 16:36:20.770  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     55 : Team(id=1, name=奇虎360, parentId=0, remarks=360科技有限公司, address=酒仙桥, createTime=Tue Aug 11 17:17:14 GMT+08:00 2020, updateTime=Tue Aug 11 17:17:14 GMT+08:00 2020)
+2020-08-12 16:36:20.795  INFO [SpringContextShutdownHook] [] o.s.s.c.ThreadPoolTaskScheduler          218 : Shutting down ExecutorService
+2020-08-12 16:36:20.796  INFO [SpringContextShutdownHook] [] o.s.s.concurrent.ThreadPoolTaskExecutor  218 : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-12 16:36:20.822  INFO [SpringContextShutdownHook] [] com.alibaba.druid.pool.DruidDataSource   2029 : {dataSource-1} closing ...
+2020-08-12 16:36:20.837  INFO [SpringContextShutdownHook] [] com.alibaba.druid.pool.DruidDataSource   2101 : {dataSource-1} closed
+2020-08-12 16:36:38.212  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     55 : Starting TeamServiceImplTest on motao-d1 with PID 5980 (started by motao in E:\JavaSpace\case-manager\case-manager-start)
+2020-08-12 16:36:38.215  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     655 : The following profiles are active: dev
+2020-08-12 16:36:39.848  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 249 : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-12 16:36:39.852  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 127 : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-12 16:36:39.909  INFO [main] [] .s.d.r.c.RepositoryConfigurationDelegate 187 : Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+2020-08-12 16:36:40.787  INFO [main] [] trationDelegate$BeanPostProcessorChecker 335 : Bean 'redisCacheConfig' of type [com.mone.server.casemanagerstart.config.redis.RedisCacheConfig$$EnhancerBySpringCGLIB$$a6d186e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-12 16:36:41.102  INFO [main] [] c.a.d.s.b.a.DruidDataSourceAutoConfigure 56 : Init DruidDataSource
+2020-08-12 16:36:41.956  INFO [main] [] com.alibaba.druid.pool.DruidDataSource   994 : {dataSource-1} inited
+2020-08-12 16:36:44.363  INFO [main] [] o.s.b.a.e.web.EndpointLinksResolver      58 : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-08-12 16:36:44.637  INFO [main] [] pertySourcedRequestMappingHandlerMapping 69 : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-12 16:36:44.646  INFO [main] [] c.m.s.c.config.Swagger2Config            115 : swagger scan basePackages:[com.mone.server.casemanagerstart, com.mone.server.casemanagerframework]
+2020-08-12 16:36:45.398  INFO [main] [] o.s.s.concurrent.ThreadPoolTaskExecutor  181 : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-12 16:36:45.779  INFO [main] [] o.s.s.c.ThreadPoolTaskScheduler          181 : Initializing ExecutorService
+2020-08-12 16:36:46.167  INFO [main] [] d.s.w.p.DocumentationPluginsBootstrapper 160 : Context refreshed
+2020-08-12 16:36:46.201  INFO [main] [] d.s.w.p.DocumentationPluginsBootstrapper 163 : Found 1 custom documentation plugin(s)
+2020-08-12 16:36:46.253  INFO [main] [] s.d.s.w.s.ApiListingReferenceScanner     41 : Scanning for api listing references
+2020-08-12 16:36:46.584  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     61 : Started TeamServiceImplTest in 8.972 seconds (JVM running for 10.656)
+2020-08-12 16:36:47.328  INFO [main] [] c.m.s.c.u.s.impl.TeamServiceImplTest     55 : Team(id=1, name=奇虎360, parentId=0, remarks=360科技有限公司, address=酒仙桥, createTime=Tue Aug 11 17:17:14 GMT+08:00 2020, updateTime=Tue Aug 11 17:17:14 GMT+08:00 2020)
+2020-08-12 16:36:47.350  INFO [SpringContextShutdownHook] [] o.s.s.c.ThreadPoolTaskScheduler          218 : Shutting down ExecutorService
+2020-08-12 16:36:47.351  INFO [SpringContextShutdownHook] [] o.s.s.concurrent.ThreadPoolTaskExecutor  218 : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-12 16:36:47.375  INFO [SpringContextShutdownHook] [] com.alibaba.druid.pool.DruidDataSource   2029 : {dataSource-1} closing ...
+2020-08-12 16:36:47.388  INFO [SpringContextShutdownHook] [] com.alibaba.druid.pool.DruidDataSource   2101 : {dataSource-1} closed

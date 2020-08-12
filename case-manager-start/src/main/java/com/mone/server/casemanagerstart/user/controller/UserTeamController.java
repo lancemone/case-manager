@@ -1,8 +1,5 @@
 package com.mone.server.casemanagerstart.user.controller;
 
-import com.mone.server.casemanagerframework.aop.log.annotation.Module;
-import com.mone.server.casemanagerframework.aop.log.annotation.OperationLog;
-import com.mone.server.casemanagerframework.aop.log.enums.OperationLogType;
 import com.mone.server.casemanagerframework.common.controller.BaseController;
 import com.mone.server.casemanagerframework.common.reselt.ApiResult;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
@@ -29,7 +26,6 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/userTeam")
-@Module("user")
 @Api(value = "系统用户-组织表API", tags = {"系统用户-组织表"})
 public class UserTeamController extends BaseController {
 
@@ -40,7 +36,6 @@ public class UserTeamController extends BaseController {
      * 添加系统用户-组织表
      */
     @PostMapping("/add")
-    @OperationLog(name = "添加系统用户-组织表", type = OperationLogType.ADD)
     @ApiOperation(value = "添加系统用户-组织表", response = ApiResult.class)
     public ApiResult addUserTeam(@Validated(Add.class) @RequestBody UserTeam userTeam) throws Exception {
         boolean flag = userTeamService.saveUserTeam(userTeam);
@@ -51,7 +46,6 @@ public class UserTeamController extends BaseController {
      * 修改系统用户-组织表
      */
     @PostMapping("/update")
-    @OperationLog(name = "修改系统用户-组织表", type = OperationLogType.UPDATE)
     @ApiOperation(value = "修改系统用户-组织表", response = ApiResult.class)
     public ApiResult updateUserTeam(@Validated(Update.class) @RequestBody UserTeam userTeam) throws Exception {
         boolean flag = userTeamService.updateUserTeam(userTeam);
@@ -62,7 +56,6 @@ public class UserTeamController extends BaseController {
      * 删除系统用户-组织表
      */
     @PostMapping("/delete/{id}")
-    @OperationLog(name = "删除系统用户-组织表", type = OperationLogType.DELETE)
     @ApiOperation(value = "删除系统用户-组织表", response = ApiResult.class)
     public ApiResult deleteUserTeam(@PathVariable("id") Long id) throws Exception {
         boolean flag = userTeamService.deleteUserTeam(id);
@@ -73,7 +66,6 @@ public class UserTeamController extends BaseController {
      * 获取系统用户-组织表详情
      */
     @GetMapping("/info/{id}")
-    @OperationLog(name = "系统用户-组织表详情", type = OperationLogType.INFO)
     @ApiOperation(value = "系统用户-组织表详情", response = UserTeamQueryVo.class)
     public ApiResult getUserTeam(@PathVariable("id") Integer id) throws Exception {
         UserTeamQueryVo userTeamQueryVo = userTeamService.getUserTeamById(id);
@@ -84,7 +76,6 @@ public class UserTeamController extends BaseController {
      * 系统用户-组织表分页列表
      */
     @PostMapping("/getPageList")
-    @OperationLog(name = "系统用户-组织表分页列表", type = OperationLogType.PAGE)
     @ApiOperation(value = "系统用户-组织表分页列表", response = UserTeamQueryVo.class)
     public ApiResult getUserTeamPageList(@Validated @RequestBody UserTeamPageParam userTeamPageParam) throws Exception {
 

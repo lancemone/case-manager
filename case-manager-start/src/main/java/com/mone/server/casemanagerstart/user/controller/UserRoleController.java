@@ -1,8 +1,5 @@
 package com.mone.server.casemanagerstart.user.controller;
 
-import com.mone.server.casemanagerframework.aop.log.annotation.Module;
-import com.mone.server.casemanagerframework.aop.log.annotation.OperationLog;
-import com.mone.server.casemanagerframework.aop.log.enums.OperationLogType;
 import com.mone.server.casemanagerframework.common.controller.BaseController;
 import com.mone.server.casemanagerframework.common.reselt.ApiResult;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
@@ -29,7 +26,6 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/userRole")
-@Module("user")
 @Api(value = "系统用户-角色表API", tags = {"系统用户-角色表"})
 public class UserRoleController extends BaseController {
 
@@ -40,7 +36,6 @@ public class UserRoleController extends BaseController {
      * 添加系统用户-角色表
      */
     @PostMapping("/add")
-    @OperationLog(name = "添加系统用户-角色表", type = OperationLogType.ADD)
     @ApiOperation(value = "添加系统用户-角色表", response = ApiResult.class)
     public ApiResult addUserRole(@Validated(Add.class) @RequestBody UserRole userRole) throws Exception {
         boolean flag = userRoleService.saveUserRole(userRole);
@@ -51,7 +46,6 @@ public class UserRoleController extends BaseController {
      * 修改系统用户-角色表
      */
     @PostMapping("/update")
-    @OperationLog(name = "修改系统用户-角色表", type = OperationLogType.UPDATE)
     @ApiOperation(value = "修改系统用户-角色表", response = ApiResult.class)
     public ApiResult updateUserRole(@Validated(Update.class) @RequestBody UserRole userRole) throws Exception {
         boolean flag = userRoleService.updateUserRole(userRole);
@@ -62,7 +56,6 @@ public class UserRoleController extends BaseController {
      * 删除系统用户-角色表
      */
     @PostMapping("/delete/{id}")
-    @OperationLog(name = "删除系统用户-角色表", type = OperationLogType.DELETE)
     @ApiOperation(value = "删除系统用户-角色表", response = ApiResult.class)
     public ApiResult deleteUserRole(@PathVariable("id") Long id) throws Exception {
         boolean flag = userRoleService.deleteUserRole(id);
@@ -73,7 +66,6 @@ public class UserRoleController extends BaseController {
      * 获取系统用户-角色表详情
      */
     @GetMapping("/info/{id}")
-    @OperationLog(name = "系统用户-角色表详情", type = OperationLogType.INFO)
     @ApiOperation(value = "系统用户-角色表详情", response = UserRoleQueryVo.class)
     public ApiResult getUserRole(@PathVariable("id") Integer id) throws Exception {
         UserRoleQueryVo userRoleQueryVo = userRoleService.getUserRoleById(id);
@@ -84,7 +76,6 @@ public class UserRoleController extends BaseController {
      * 系统用户-角色表分页列表
      */
     @PostMapping("/getPageList")
-    @OperationLog(name = "系统用户-角色表分页列表", type = OperationLogType.PAGE)
     @ApiOperation(value = "系统用户-角色表分页列表", response = UserRoleQueryVo.class)
     public ApiResult getUserRolePageList(@Validated @RequestBody UserRolePageParam userRolePageParam) throws Exception {
 

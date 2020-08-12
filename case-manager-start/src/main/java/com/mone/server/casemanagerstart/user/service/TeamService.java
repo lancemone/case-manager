@@ -1,12 +1,11 @@
 package com.mone.server.casemanagerstart.user.service;
 
 import com.mone.server.casemanagerframework.common.service.BaseService;
-import com.mone.server.casemanagerframework.corn.pagination.Paging;
 import com.mone.server.casemanagerstart.user.entity.Team;
-import com.mone.server.casemanagerstart.user.param.TeamPageParam;
-import com.mone.server.casemanagerstart.user.vo.output.TeamQueryVo;
+import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 系统组织表 服务类
@@ -15,6 +14,7 @@ import java.io.Serializable;
  * @author : MoTao
  * @create 2020-07-11
  */
+@Component
 public interface TeamService extends BaseService<Team> {
 
     /**
@@ -51,7 +51,9 @@ public interface TeamService extends BaseService<Team> {
     * @return
     * @throws Exception
     */
-    TeamQueryVo getTeamById(Serializable id) throws Exception;
+    Team getTeamInfoById(Serializable id) throws Exception;
+
+    List<Team> getTeamsByParentId(Serializable parentId) throws Exception;
 
     /**
     * 获取分页对象
@@ -60,6 +62,6 @@ public interface TeamService extends BaseService<Team> {
     * @return
     * @throws Exception
     */
-    Paging<TeamQueryVo> getTeamPageList(TeamPageParam teamPageParam) throws Exception;
+//    Paging<TeamQueryVo> getTeamPageList(TeamPageParam teamPageParam) throws Exception;
 
 }

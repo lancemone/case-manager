@@ -41,6 +41,7 @@
         <commons-text.version>1.8</commons-text.version>
         <jansi.version>1.18</jansi.version>
         <velocity.version>2.2</velocity.version>
+        <junit.version>4.13</junit.version>
 
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
@@ -268,6 +269,14 @@
                 <groupId>org.fusesource.jansi</groupId>
                 <artifactId>jansi</artifactId>
                 <version>${jansi.version}</version>
+            </dependency>
+
+            <!--测试-->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.13</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

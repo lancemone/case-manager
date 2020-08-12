@@ -1,8 +1,5 @@
 package com.mone.server.casemanagerstart.user.controller;
 
-import com.mone.server.casemanagerframework.aop.log.annotation.Module;
-import com.mone.server.casemanagerframework.aop.log.annotation.OperationLog;
-import com.mone.server.casemanagerframework.aop.log.enums.OperationLogType;
 import com.mone.server.casemanagerframework.common.controller.BaseController;
 import com.mone.server.casemanagerframework.common.reselt.ApiResult;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
@@ -29,7 +26,6 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/user")
-@Module("user")
 @Api(value = "系统用户表API", tags = {"系统用户表"})
 public class UserController extends BaseController {
 
@@ -40,7 +36,6 @@ public class UserController extends BaseController {
      * 添加系统用户表
      */
     @PostMapping("/add")
-    @OperationLog(name = "添加系统用户表", type = OperationLogType.ADD)
     @ApiOperation(value = "添加系统用户表", response = ApiResult.class)
     public ApiResult addUser(@Validated(Add.class) @RequestBody User user) throws Exception {
         boolean flag = userService.saveUser(user);
@@ -51,7 +46,6 @@ public class UserController extends BaseController {
      * 修改系统用户表
      */
     @PostMapping("/update")
-    @OperationLog(name = "修改系统用户表", type = OperationLogType.UPDATE)
     @ApiOperation(value = "修改系统用户表", response = ApiResult.class)
     public ApiResult updateUser(@Validated(Update.class) @RequestBody User user) throws Exception {
         boolean flag = userService.updateUser(user);
@@ -62,7 +56,6 @@ public class UserController extends BaseController {
      * 删除系统用户表
      */
     @PostMapping("/delete/{id}")
-    @OperationLog(name = "删除系统用户表", type = OperationLogType.DELETE)
     @ApiOperation(value = "删除系统用户表", response = ApiResult.class)
     public ApiResult deleteUser(@PathVariable("id") Long id) throws Exception {
         boolean flag = userService.deleteUser(id);
@@ -73,7 +66,6 @@ public class UserController extends BaseController {
      * 获取系统用户表详情
      */
     @GetMapping("/info/{id}")
-    @OperationLog(name = "系统用户表详情", type = OperationLogType.INFO)
     @ApiOperation(value = "系统用户表详情", response = UserQueryVo.class)
     public ApiResult getUser(@PathVariable("id") Integer id) throws Exception {
         UserQueryVo userQueryVo = userService.getUserById(id);
@@ -84,7 +76,6 @@ public class UserController extends BaseController {
      * 系统用户表分页列表
      */
     @PostMapping("/getPageList")
-    @OperationLog(name = "系统用户表分页列表", type = OperationLogType.PAGE)
     @ApiOperation(value = "系统用户表分页列表", response = UserQueryVo.class)
     public ApiResult getUserPageList(@Validated @RequestBody UserPageParam userPageParam) throws Exception {
 

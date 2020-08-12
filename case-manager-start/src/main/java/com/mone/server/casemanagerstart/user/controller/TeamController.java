@@ -1,8 +1,4 @@
 package com.mone.server.casemanagerstart.user.controller;
-
-import com.mone.server.casemanagerframework.aop.log.annotation.Module;
-import com.mone.server.casemanagerframework.aop.log.annotation.OperationLog;
-import com.mone.server.casemanagerframework.aop.log.enums.OperationLogType;
 import com.mone.server.casemanagerframework.common.controller.BaseController;
 import com.mone.server.casemanagerframework.common.reselt.ApiResult;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
@@ -11,13 +7,13 @@ import com.mone.server.casemanagerframework.corn.validator.groups.Update;
 import com.mone.server.casemanagerstart.user.entity.Team;
 import com.mone.server.casemanagerstart.user.param.TeamPageParam;
 import com.mone.server.casemanagerstart.user.service.TeamService;
-import com.mone.server.casemanagerstart.user.vo.output.TeamQueryVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * 系统组织表 控制器
@@ -29,20 +25,21 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/team")
-@Module("user")
 @Api(value = "系统组织表API", tags = {"系统组织表"})
 public class TeamController extends BaseController {
 
-    @Autowired
-    private TeamService teamService;
+    private final TeamService teamService;
+
+    public TeamController(TeamService teamService) {
+        this.teamService = teamService;
+    }
 
     /**
      * 添加系统组织表
      */
     @PostMapping("/add")
-    @OperationLog(name = "添加系统组织表", type = OperationLogType.ADD)
     @ApiOperation(value = "添加系统组织表", response = ApiResult.class)
-    public ApiResult addTeam(@Validated(Add.class) @RequestBody Team team) throws Exception {
+    public ApiResult<Boolean> addTeam(@Validated(Add.class) @RequestBody Team team) throws Exception {
         boolean flag = teamService.saveTeam(team);
         return ApiResult.result(flag);
     }
@@ -51,9 +48,8 @@ public class TeamController extends BaseController {
      * 修改系统组织表
      */
     @PostMapping("/update")
-    @OperationLog(name = "修改系统组织表", type = OperationLogType.UPDATE)
     @ApiOperation(value = "修改系统组织表", response = ApiResult.class)
-    public ApiResult updateTeam(@Validated(Update.class) @RequestBody Team team) throws Exception {
+    public ApiResult<Boolean> updateTeam(@Validated(Update.class) @RequestBody Team team) throws Exception {
         boolean flag = teamService.updateTeam(team);
         return ApiResult.result(flag);
     }
@@ -62,9 +58,8 @@ public class TeamController extends BaseController {
      * 删除系统组织表
      */
     @PostMapping("/delete/{id}")
-    @OperationLog(name = "删除系统组织表", type = OperationLogType.DELETE)
     @ApiOperation(value = "删除系统组织表", response = ApiResult.class)
-    public ApiResult deleteTeam(@PathVariable("id") Long id) throws Exception {
+    public ApiResult<Boolean> deleteTeam(@PathVariable("id") Long id) throws Exception {
         boolean flag = teamService.deleteTeam(id);
         return ApiResult.result(flag);
     }
@@ -73,20 +68,29 @@ public class TeamController extends BaseController {
      * 获取系统组织表详情
      */
     @GetMapping("/info/{id}")
-    @OperationLog(name = "系统组织表详情", type = OperationLogType.INFO)
-    @ApiOperation(value = "系统组织表详情", response = TeamQueryVo.class)
-    public ApiResult getTeam(@PathVariable("id") Integer id) throws Exception {
-        TeamQueryVo teamQueryVo = teamService.getTeamById(id);
-        return ApiResult.ok(teamQueryVo);
+    @ApiOperation(value = "系统组织表详情", response = Team.class)
+    public ApiResult<Team> getTeam(@PathVariable("id") Integer id) throws Exception {
+        Team team = teamService.getTeamInfoById(id);
+        return ApiResult.ok(team);
+    }
+
+    /**
+     * @param parentId 部门父id
+     * @return
+     * @throws Exception
+     */
+    @GetMapping("/list/{parentId}")
+    public ApiResult<List<Team>> getTeamsByParentId(@PathVariable("parentId") int parentId) throws Exception {
+        List<Team> teams = teamService.getTeamsByParentId(parentId);
+        return ApiResult.ok(teams);
     }
 
     /**
      * 系统组织表分页列表
      */
     @PostMapping("/getPageList")
-    @OperationLog(name = "系统组织表分页列表", type = OperationLogType.PAGE)
     @ApiOperation(value = "系统组织表分页列表", response = TeamQueryVo.class)
-    public ApiResult getTeamPageList(@Validated @RequestBody TeamPageParam teamPageParam) throws Exception {
+    public ApiResult<Paging<TeamQueryVo>> getTeamPageList(@Validated @RequestBody TeamPageParam teamPageParam) throws Exception {
 
         Paging<TeamQueryVo> paging = teamService.getTeamPageList(teamPageParam);
         return ApiResult.ok(paging);
