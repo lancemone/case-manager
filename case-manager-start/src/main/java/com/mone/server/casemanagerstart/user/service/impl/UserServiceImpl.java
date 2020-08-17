@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.mone.server.casemanagerframework.common.exception.ParamErrorException;
 import com.mone.server.casemanagerframework.common.service.BaseServiceImpl;
 import com.mone.server.casemanagerframework.corn.pagination.PageInfo;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
@@ -11,6 +12,7 @@ import com.mone.server.casemanagerstart.user.entity.User;
 import com.mone.server.casemanagerstart.user.mapper.UserMapper;
 import com.mone.server.casemanagerstart.user.param.UserPageParam;
 import com.mone.server.casemanagerstart.user.service.UserService;
+import com.mone.server.casemanagerstart.user.vo.input.UserParamVo;
 import com.mone.server.casemanagerstart.user.vo.output.UserQueryVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +37,25 @@ public class UserServiceImpl extends BaseServiceImpl<UserMapper, User> implement
 
     @Transactional(rollbackFor = Exception.class)
     @Override
-    public boolean saveUser(User user) throws Exception {
+    public boolean saveUser(UserParamVo userParamVo) throws Exception {
+        User user = new User();
+        if (userParamVo != null) {
+            if (userParamVo.getUsername() == null) {
+                throw new ParamErrorException("用户名不能为空");
+            }
+            if (userParamVo.getEnable() == null) {
+                throw new ParamErrorException("密码不能为空");
+            }
+            if (userParamVo.getRoleId() == null) {
+                throw new ParamErrorException("用户角色不能为空");
+            }
+            if (userParamVo.getTeamId() == null) {
+                throw new ParamErrorException("部门不能为空");
+            }
+            String passwd = "111111";
+            user.setUsername(userParamVo.getUsername());
+
+        }
         return super.save(user);
     }
 
@@ -53,10 +73,7 @@ public class UserServiceImpl extends BaseServiceImpl<UserMapper, User> implement
 
     @Override
     public UserQueryVo getUserById(Serializable id) throws Exception {
-        User user = baseMapper.getUserInfoById(id);
-        UserQueryVo userQueryVo = new UserQueryVo();
-        BeanUtil.copyProperties(user, userQueryVo);
-        return userQueryVo;
+        return baseMapper.getUserInfoById(id);
     }
 
     @Override

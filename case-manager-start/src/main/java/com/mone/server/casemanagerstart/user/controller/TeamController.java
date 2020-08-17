@@ -1,11 +1,9 @@
 package com.mone.server.casemanagerstart.user.controller;
 import com.mone.server.casemanagerframework.common.controller.BaseController;
 import com.mone.server.casemanagerframework.common.reselt.ApiResult;
-import com.mone.server.casemanagerframework.corn.pagination.Paging;
 import com.mone.server.casemanagerframework.corn.validator.groups.Add;
 import com.mone.server.casemanagerframework.corn.validator.groups.Update;
 import com.mone.server.casemanagerstart.user.entity.Team;
-import com.mone.server.casemanagerstart.user.param.TeamPageParam;
 import com.mone.server.casemanagerstart.user.service.TeamService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -88,13 +86,13 @@ public class TeamController extends BaseController {
     /**
      * 系统组织表分页列表
      */
-    @PostMapping("/getPageList")
-    @ApiOperation(value = "系统组织表分页列表", response = TeamQueryVo.class)
-    public ApiResult<Paging<TeamQueryVo>> getTeamPageList(@Validated @RequestBody TeamPageParam teamPageParam) throws Exception {
-
-        Paging<TeamQueryVo> paging = teamService.getTeamPageList(teamPageParam);
-        return ApiResult.ok(paging);
-    }
+//    @PostMapping("/getPageList")
+//    @ApiOperation(value = "系统组织表分页列表", response = TeamQueryVo.class)
+//    public ApiResult<Paging<TeamQueryVo>> getTeamPageList(@Validated @RequestBody TeamPageParam teamPageParam) throws Exception {
+//
+//        Paging<TeamQueryVo> paging = teamService.getTeamPageList(teamPageParam);
+//        return ApiResult.ok(paging);
+//    }
 
 }
 

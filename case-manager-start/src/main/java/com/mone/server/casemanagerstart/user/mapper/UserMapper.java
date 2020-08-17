@@ -27,7 +27,7 @@ public interface UserMapper extends BaseMapper<User> {
          * @param id
          * @return
          */
-    User getUserInfoById(Serializable id);
+    UserQueryVo getUserInfoById(Serializable id);
 
         /**
          * 获取分页对象

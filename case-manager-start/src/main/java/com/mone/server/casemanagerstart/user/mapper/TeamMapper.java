@@ -38,6 +38,6 @@ public interface TeamMapper extends BaseMapper<Team> {
          * @param
          * @return
          */
-    IPage<TeamQueryVo> getTeamPageList(@Param("page") Page page, @Param("param") TeamPageParam teamPageParam);
+//    IPage<TeamQueryVo> getTeamPageList(@Param("page") Page page, @Param("param") TeamPageParam teamPageParam);
 
     }

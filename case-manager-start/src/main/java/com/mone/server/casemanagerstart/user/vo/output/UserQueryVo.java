@@ -39,9 +39,7 @@ public class UserQueryVo implements Serializable {
 
     private Integer roleId;
 
-    private String roleRemarks;
-
-//    private Set<Team> teams = Sets.newHashSet();
+    private String roleName;
 
     @ApiModelProperty("创建时间")
     private Date createTime;

@@ -37,4 +37,10 @@ public class UserParamVo {
 
     @ApiModelProperty("账号启用状态: 0:禁用;1:启用")
     private Boolean enable;
+
+    @ApiModelProperty("角色id")
+    private Integer roleId;
+
+    @ApiModelProperty("部门id")
+    private Integer teamId;
 }

@@ -67,7 +67,7 @@ public class UserController extends BaseController {
      */
     @GetMapping("/info/{id}")
     @ApiOperation(value = "系统用户表详情", response = UserQueryVo.class)
-    public ApiResult getUser(@PathVariable("id") Integer id) throws Exception {
+    public ApiResult<UserQueryVo> getUser(@PathVariable("id") Integer id) throws Exception {
         UserQueryVo userQueryVo = userService.getUserById(id);
         return ApiResult.ok(userQueryVo);
     }

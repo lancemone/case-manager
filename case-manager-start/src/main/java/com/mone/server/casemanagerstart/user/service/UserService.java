@@ -4,6 +4,7 @@ import com.mone.server.casemanagerframework.common.service.BaseService;
 import com.mone.server.casemanagerframework.corn.pagination.Paging;
 import com.mone.server.casemanagerstart.user.entity.User;
 import com.mone.server.casemanagerstart.user.param.UserPageParam;
+import com.mone.server.casemanagerstart.user.vo.input.UserParamVo;
 import com.mone.server.casemanagerstart.user.vo.output.UserQueryVo;
 
 import java.io.Serializable;
@@ -24,7 +25,7 @@ public interface UserService extends BaseService<User> {
      * @return
      * @throws Exception
      */
-    boolean saveUser(User user) throws Exception;
+    boolean saveUser(UserParamVo user) throws Exception;
 
     /**
      * 修改
